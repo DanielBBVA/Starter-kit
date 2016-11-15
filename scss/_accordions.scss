@@ -1,0 +1,124 @@
+
+
+/* Accordions */
+
+.accordion {
+	padding: 4em 0;
+
+	.panel + .panel {
+		margin-top: 0;
+	}
+
+	.panel {
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+
+		.collapsing {
+		    transition: height 0.6s;
+		}
+
+		&:first-child .panel-heading a {
+			border-top: 1px solid $grey200;
+		}
+
+		.panel-heading {
+			
+			padding: 0;
+        
+			a {
+				border-bottom: 1px solid $grey200;
+				display: flex;
+				font-size: 1.6rem;
+				letter-spacing: -0.2px;
+				line-height: 1.45;
+				margin-bottom: 0;
+				padding: 1.875em 6em 1.875em 1.875em;
+				position: relative;
+				width: 100%;
+				transition: $all-fast;
+                color:  $grey600;
+                
+
+				&:hover, &:active {
+					color: $blue-medium-wcag;
+					border-bottom: 1px solid $grey200;
+				}
+
+				&:focus {
+					color: $grey600;
+				}
+
+				&:not(.collapsed) {
+					// background-color: rgba(91, 190, 255, 0.1);
+					border-bottom: none;
+					padding-bottom: 0;
+				}
+
+				&:not(.collapsed) .bbva-coronita_chev-down:before {
+					top: 66%;
+					transform: rotate(-90deg);
+				}
+			}
+
+			.icon {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			.icon:before {
+				text-align: center;
+				width: 60px;
+                color: $blue-medium-wcag;
+			}
+            
+            .bbva-coronita_minus-stag,
+            .bbva-coronita_plus-stag {
+                color: $blue-medium-wcag;
+                font-size: 1em;
+                left: auto;
+                margin-right: 1em;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%); 
+            }
+            
+            .bbva-coronita_plus-stag{
+                display: none; 
+            }
+
+            
+		}
+
+		.panel-collapse {
+			border-bottom: 1px solid $grey200;
+
+			&.in {
+				border-bottom: 1px solid $grey200;
+			}
+
+			.panel-body {
+				// background-color: rgba(91, 190, 255, 0.1);
+				border-top: none;
+				padding: 1.25em 6em 2.5em 1.875em;
+
+				> *:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+        
+        .collapsed{ 
+            .bbva-coronita_minus-stag {
+                display: none; 
+            }
+            .bbva-coronita_plus-stag {
+                display: inline-block; 
+            }
+        }
+	}
+}
+

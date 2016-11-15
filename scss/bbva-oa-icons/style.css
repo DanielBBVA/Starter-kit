@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'bbva-oa-icons';
+  src:  url('fonts/bbva-oa-icons.eot?g0cgau');
+  src:  url('fonts/bbva-oa-icons.eot?g0cgau#iefix') format('embedded-opentype'),
+    url('fonts/bbva-oa-icons.ttf?g0cgau') format('truetype'),
+    url('fonts/bbva-oa-icons.woff?g0cgau') format('woff'),
+    url('fonts/bbva-oa-icons.svg?g0cgau#bbva-oa-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-oa-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-oa_auto:before {
+  content: "\e900";
+}
+.ico-oa_autobank:before {
+  content: "\e901";
+}
+.ico-oa_bank:before {
+  content: "\e902";
+}
+.ico-oa_bar:before {
+  content: "\e903";
+}
+.ico-oa_barcode:before {
+  content: "\e904";
+}
+.ico-oa_bookstore:before {
+  content: "\e905";
+}
+.ico-oa_build:before {
+  content: "\e906";
+}
+.ico-oa_cashregister:before {
+  content: "\e907";
+}
+.ico-oa_coffeshop:before {
+  content: "\e908";
+}
+.ico-oa_discount:before {
+  content: "\e909";
+}
+.ico-oa_donation:before {
+  content: "\e90a";
+}
+.ico-oa_education:before {
+  content: "\e90b";
+}
+.ico-oa_entretainment:before {
+  content: "\e90c";
+}
+.ico-oa_executive:before {
+  content: "\e90d";
+}
+.ico-oa_florist:before {
+  content: "\e90e";
+}
+.ico-oa_furniture:before {
+  content: "\e90f";
+}
+.ico-oa_health:before {
+  content: "\e910";
+}
+.ico-oa_hotel:before {
+  content: "\e911";
+}
+.ico-oa_jewel:before {
+  content: "\e912";
+}
+.ico-oa_pets:before {
+  content: "\e913";
+}
+.ico-oa_pinpadconnect:before {
+  content: "\e914";
+}
+.ico-oa_pinpaddisconnected:before {
+  content: "\e915";
+}
+.ico-oa_point:before {
+  content: "\e916";
+}
+.ico-oa_promotion:before {
+  content: "\e917";
+}
+.ico-oa_restaurant:before {
+  content: "\e918";
+}
+.ico-oa_retail:before {
+  content: "\e919";
+}
+.ico-oa_retirement:before {
+  content: "\e91a";
+}
+.ico-oa_rewards:before {
+  content: "\e91b";
+}
+.ico-oa_sales:before {
+  content: "\e91c";
+}
+.ico-oa_savings:before {
+  content: "\e91d";
+}
+.ico-oa_services:before {
+  content: "\e91e";
+}
+.ico-oa_shop:before {
+  content: "\e91f";
+}
+.ico-oa_shopping:before {
+  content: "\e920";
+}
+.ico-oa_supermarket:before {
+  content: "\e921";
+}
+.ico-oa_toys:before {
+  content: "\e922";
+}
+.ico-oa_travel:before {
+  content: "\e923";
+}
+.ico-oa_weather:before {
+  content: "\e924";
+}
+.ico-oa_wellness:before {
+  content: "\e925";
+}
+

@@ -1,0 +1,97 @@
+#card-drawer {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &> * {
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.form-group-bbva.shopping-cart {
+    margin-top: 2.5em; 
+}
+        
+#card-drawer .responsive-tabs li a{
+    background:none;
+    color:#fff;
+    color: rgba(256,256,256,0.70);
+    padding: 0 4rem;
+    padding-left: 0;
+}
+
+#card-drawer .responsive-tabs li.active > a{
+    color:#fff;  
+    box-shadow:none;
+    border: none;
+}
+
+
+#card-drawer .nav-tabs li.active > a, 
+#card-drawer .nav-tabs li.active > a:hover, 
+#card-drawer .nav-tabs li.active > a:focus, 
+#card-drawer .nav-tabs li.active > a:active, 
+#card-drawer .nav-tabs li > a:hover, 
+#card-drawer .nav-tabs li > a:focus, 
+#card-drawer.nav-tabs li > a:active{  
+    box-shadow:none;
+    border: none;
+}
+
+/*Hover Effect for Card*/
+#card-drawer .tab-content .tab-pane img{
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+        
+
+#card-drawer .tab-content .tab-pane a img{
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#card-drawer .tab-content .tab-pane a:hover img,
+#card-drawer .tab-content .tab-pane a:focus img,
+#card-drawer .tab-content .tab-pane a:active img,
+#card-drawer .tab-content .tab-pane img:hover,
+#card-drawer .tab-content .tab-pane img:hover,
+#card-drawer .tab-content .tab-pane img:hover{
+    box-shadow: 0px 0px 19px 1px rgba(121, 190, 247, 1);
+    border: 1px solid rgba(256,256,256,0.4);
+}
+
+
+#card-drawer .tab-content .tab-pane img:hover{
+    cursor: pointer;
+}
+
+/*Active Tab*/
+
+
+#card-drawer .responsive-tabs > li.active a {
+    color: #fff;
+}
+
+#card-drawer .collapsing {
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.checkbox-content label{
+    display: flex;
+    align-items: flex-start;
+} 
+
+.checkbox-content label ~ p{
+    margin-left: 4rem
+}
+
+
+.form-group-bbva .checkbox-content label .faux-box{
+        flex-shrink: 0;
+        margin-right: 1.4rem;
+}

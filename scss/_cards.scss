@@ -1,0 +1,355 @@
+
+
+/* Cards */
+
+.bbva-cards {
+    padding-bottom: 3rem;
+
+    h2, .lead, .view-more {
+        text-align: center;
+    }
+
+    .lead {
+        padding: 0 17%;
+    }
+
+    .view-more {
+        padding-top: 5em;
+    }
+
+    .card-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        margin-top: 3rem;
+
+        [class*="col"] {
+            display: flex;
+        }
+
+        .card-wrap {
+            background: $white;
+            border-bottom: none;
+            box-shadow: $box-shadow;
+            display: block;
+            padding: 0;
+            position: relative;
+            flex: 1;
+            max-width: 100%;
+
+            .card-img {
+                background-position: center center;
+                background-repeat: none;
+                background-size: cover;
+                display: block;
+                height: 235px;
+                margin-bottom: 1.375em;
+                position: relative;
+                text-indent: -9999px;
+                width: 100%;
+            }
+
+            .card-text {
+                position: relative;
+            }
+
+            &> * {
+                color: $grey600;
+                padding: 0 30px;
+                transition: $color-fast;
+            }
+
+            p:not(.faux-link) {
+                line-height: 1.6;
+                margin-bottom: 0;
+                padding-bottom: 6em;
+            }
+
+            .faux-link {
+                bottom: 30px;
+                color: $blue-medium-wcag;
+                display: block;
+                margin-bottom: 0;
+                position: absolute;
+            }
+
+            &:hover, &:active, &:focus {
+                border-bottom: none;
+
+                .faux-link {
+                    color: $navy;
+                }
+            }
+        }
+    }
+}
+
+/* Stacking cards don't need extra margin and padding */
+// .bbva-cards.card-stack {
+//     padding-bottom: 2em;
+
+//     .card-block {
+//         margin-top: 0;
+//     }
+// }
+
+.bbva-cards + .bbva-cards {
+    .card-block {
+        margin-top: 0;
+    }
+}
+
+/* Cards - Editorial Layout (Featured Articles) */
+
+.bbva-cards {
+    .article-category {
+        color: $grey400;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom: 0.65em;
+
+        &.h6.bullet:before {
+            font-size: 1.2rem;
+        }
+
+        // Category colors
+        &.brand-ambassadors.h6.bullet:before,
+        &.family-career.h6.bullet:before {
+            color: $red;
+        }
+
+        &.savings-budgeting.h6.bullet:before {
+            color: $orange;
+        }
+        
+        &.communities.h6.bullet:before,
+        &.retirement.h6.bullet:before {
+            color: $yellow;
+        }
+
+        &.home-ownership.h6.bullet:before {
+            color: $green;
+        }
+        
+        &.bright-principles.h6.bullet:before,
+        &.travel-adventure.h6.bullet:before {
+            color: $blue-light;
+        }
+
+        &.credit.h6.bullet:before {
+            color: $purple;
+        }
+    }
+}
+
+.bbva-cards-editorial {
+    margin-top:1rem;
+    
+    .card-block .card-wrap  {
+        // .article-tags {
+        //     bottom: 30px;
+        //     display: table;
+        //     margin: 0;
+        //     position: absolute;
+
+        //     li {
+        //         display: table-cell;
+        //         padding: 0 0 0 0.5em; 
+
+        //         &:before {
+        //             content: "";
+        //         }
+
+        //         &:first-child {
+        //             padding-left: 0;
+        //         }
+
+        //         .icon {
+        //             background: $grey100;
+        //             color: $grey500;
+        //             border-radius: 50%;
+        //             font-size: 0.9em;
+        //             padding: 0.65em;
+        //         }
+        //     }
+        // }
+
+        p:not(.faux-link) {
+            margin-bottom: 1.5em;
+            padding-bottom: 4em;
+        }
+    }
+
+    .card-block {
+        [class*="col"]:first-child {
+            .card-wrap {
+                .card-img {
+                    height: 515px;
+                }
+
+                .card-text {
+                    margin-top: -170px;
+                }
+
+                .article-category {
+                    color: $white;
+                }
+
+                h3 {
+                    color: $white;
+                    font-size: 4.0rem;
+                    height: 105px;
+                    margin-bottom: 50px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        [class*="col"]:last-child {
+            flex-direction: column;
+
+            .card-wrap {
+                display: flex;
+                width: 100%;
+                max-height: 50%;
+
+                &:first-child {
+                    margin-bottom: 30px;
+                }
+
+                .card-img {
+                    height: inherit;
+                    width: 45%;
+                    margin-bottom: 0;
+                }
+
+                .card-text {
+                    margin-bottom: 9rem;
+                    max-height: 318px;
+                    overflow: hidden;
+                    padding: 30px;
+                    width: 55%;
+
+                    h3 {
+                        margin-bottom: 0.4em;
+                    }
+                }
+
+                // .article-tags {
+                //     left: 45%;
+                // }
+
+                .faux-link {
+                    left: 45%;
+                }
+            }
+        }
+    }
+}
+
+/* Cards - Editorial Layout, Flipped (Alternate) */
+
+.bbva-cards-editorial-alternate .card-block {
+    flex-direction: row-reverse;
+}
+
+/* Cards - Image "Break" Layout */
+
+.bbva-cards .card-block {
+    .card-img-break {
+        margin-top: 90px;
+
+        .card-img {
+            height: auto;
+            margin-bottom: 0;
+        }
+
+        img {
+            display: block;
+            position: relative;
+            margin: -60px auto 1.75em;
+            max-width: 66%;
+        }
+    }
+}
+
+/* Cards - Video Cards */
+
+.bbva-cards .card-block {
+    .card-video {
+        .bbva-coronita_video-play {
+            color: $white;
+            display: block;
+            font-size: 7rem;
+            left: 52%;
+            margin-left: -4.5rem;
+            opacity: 0.8;
+            padding: 0;
+            position: absolute;
+            transition: $opacity-fast;
+            top: 66px;
+            z-index: 2;
+        }
+
+        &:hover .bbva-coronita_video-play {
+            opacity: 1;
+        }
+
+        .card-img, .image-header-overlay {
+            height: 195px;
+        }
+
+        .card-text {
+            min-height: 125px;
+
+            h3 {
+                padding-bottom: 3.5em;
+            }
+        }
+    }
+}
+
+/* Cards - Single Card Layout */
+.bbva-cards {
+
+    .card-single {
+    flex-wrap: wrap;
+
+        [class*="col"] {
+            margin-bottom: 30px;
+        }
+
+        .card-wrap {
+            display: flex;
+
+            .card-img {
+                height: auto;
+                width: 50%;
+                margin: 0 15px 0 0;
+            }
+
+            .card-text {
+                padding: 30px;
+                width: 50%;
+            }
+
+            .faux-link {
+                left: 50.5%;
+            }
+        }
+    }
+}
+
+/* Cards - Single Card, Image Break */
+
+.bbva-cards .card-single {
+    .card-img-break {
+        margin-top: 0;
+
+        img {
+            margin: 2em auto;
+        }
+    }
+}
+

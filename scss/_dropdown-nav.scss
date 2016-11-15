@@ -1,0 +1,139 @@
+
+
+/* Dropdown Navigation / Jump Nav */
+
+.dropdown-nav {
+	display: table;
+	margin: 0;
+	width: auto;
+
+	// &:after {
+	// 	content: '\0000a0';
+	// 	display: inline-block;
+	// 	height: 0;
+	// 	width: 100%;
+	// 	position: relative;
+	// 	margin: 0;
+	// 	padding: 0;
+	// 	line-height: 0;
+	// }
+
+	li {
+		display: table-cell;
+		margin: 0;
+		padding: 1em 0;
+
+		&:before {
+			content: '';
+		}
+
+		&.active a {
+			color: $grey600;
+		}
+
+		&.lastTab a {
+			color: $blue-medium-wcag;
+
+			&:hover, &:focus, &:active {
+				color: $navy;
+			}
+		}
+
+		a {	
+			display: block;
+			font-size: 1.3rem;
+			margin: 0 2rem;
+			position: relative;
+			text-transform: uppercase;
+		}
+
+		&:first-child a {
+			margin-left: 0;
+		}
+
+		&:last-child a {
+			margin-right: 0;
+		}
+	}
+
+	// Dynamic dropdown menu added by responsive-tabs.js
+	.lastTab {
+		padding-right: 15px;
+	}
+
+	.dropdown-menu {
+		border-color: $grey300;
+		border-radius: 0;
+		left: auto;
+		padding: 0;
+		right: 0;
+		top: auto;
+
+		li {
+			display: block !important;
+			padding: 0;
+
+			a {
+				border-bottom: none;
+				margin: 0;
+				padding: 1em;
+				width: 100%;
+
+				&:hover, &:focus, &:active {
+					border-bottom: none;
+				}
+			}
+
+			&.active a {
+				background-color: $grey100;
+
+				&:hover {
+					color: $blue-medium-wcag;
+				}
+			}
+		}
+	}
+
+	// Narrow screen - only the dropdown can fit in the available space
+	&.dropdown-only {
+		border-top: 1px solid $grey300;
+		border-bottom: 1px solid $grey300;
+		margin-bottom: 1.65em;
+		width: 100%;
+
+		.lastTab {
+			width: 100%;
+			text-align: center;
+
+			a {
+				border-bottom: none;
+				display: table;
+				margin: 0 auto;
+			}
+		}
+
+		.dropdown-menu {
+			padding: 0;
+			top: 49px;
+			width: 100%;
+
+			li {
+				padding: 0;
+
+				a {
+					margin: 0;
+					padding: 1em 0;
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.lastTab {
+	.dropdown-menu {
+		max-height: 350px;
+		overflow: scroll;
+	}
+}

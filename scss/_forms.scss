@@ -1,0 +1,425 @@
+
+
+/* Forms */
+
+input[type="text"], textarea {
+	border-radius: 0;
+}
+
+/* Select Fields */
+// Select uses Select2 JS library to enable styling
+
+.select2 {
+	box-shadow: 0;
+	width: 100%;
+
+	&.select2-container--focus .select2-selection {
+		border-color: $blue-light;
+	}
+
+	.selection {
+		display: block;
+		position: relative;
+	}
+
+	.select2-selection {
+		border-radius: 0;
+		background-color: $white;
+		border: 1px solid $grey400;
+		color: $grey600;
+		font-family: $sans-serif-medium;
+		font-size: 1em;
+    	letter-spacing: 0.025em;
+		height: auto;
+		padding: 1em;
+	}
+
+	&.select2-container--disabled .select2-selection--single .select2-selection__rendered {
+		color: $grey500;
+	}
+}
+
+// Dropdown "results"
+.select2-results {
+	ul li {
+		font-family: $sans-serif-medium;
+		font-size: 1em;
+    	letter-spacing: 0.025em;
+    	color: $grey600;
+    	padding: 1.75rem 2rem;
+
+		&:before {
+			content: '';
+		}
+	}
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: $blue-medium;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: $grey600;
+}
+
+
+// Dropdown arrow
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 100%;
+	right: 1em;
+
+	b {
+		border: none;
+
+		&:before {
+			color: $grey500;
+			font-size: 1.1rem;
+		    margin-left: 4px;
+		    margin-top: -9px;
+		    position: absolute;
+		    top: 50%;
+			transform: translateY(-50%);
+
+			font-family: 'coronita';
+			content: $ico-cm_chev;
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+	}
+}
+
+.bootstrap-select {
+	background-color: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	height: auto;
+
+	.dropdown-toggle {
+		background-color: $white;
+		border: 1px solid $grey400;
+		color: $grey500;
+		font-family: $sans-serif;
+		margin: 0 0 2em;
+		padding: 1em;
+		white-space: pre;
+
+		&:focus {
+			border-color: $blue-light;
+		}
+
+		.filter-option:before {
+			color: $grey400;
+			display: inline-block;
+			position: relative;
+			font-family: 'coronita';
+			content: $ico-cm_info;
+			padding-right: 8px;
+		}
+	}
+}
+
+/* General Form Fields */
+
+//Form Group BBVA & Form Control BBVA - A replacement for Bootstrap's Form Control
+
+.form-group-bbva{
+    margin-bottom: 3rem;
+   
+    .form-control-bbva {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+//styles input, textarea
+form input,
+form textarea,
+.form-group-bbva input[type="text"],
+.form-group-bbva input[type="email"],
+.form-group-bbva input[type="tel"],
+.form-group-bbva input[type="url"],
+.form-group-bbva textarea,
+.form-group-bbva select,
+.form-group-bbva .select2-container--default .select2-selection--single .select2-selection__rendered
+{
+    padding: 2rem;
+    background: $grey100;
+    color: $grey600;
+    outline: none;
+    border:none;
+    font-family: $sans-serif;
+    letter-spacing: 0.015em;
+}
+
+
+.form-group-bbva .select2 {
+	box-shadow: 0;
+	width: 100%;
+
+	&.select2-container--focus .select2-selection {
+		border-color: none;
+	}
+
+	.selection {
+		display: block;
+		position: relative;
+	}
+
+	.select2-selection {
+		background-color: $grey100;
+		border: none;
+		color: $grey600;
+		padding: 2rem;
+        outline: none;
+	}
+}
+
+.form-group-bbva  .select2-container .select2-selection--single .select2-selection__rendered{
+    padding: 0;
+}
+.form-group-bbva .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: $grey600;
+}
+        
+// Dropdown arrow
+.form-group-bbva .select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 100%;
+	right: 1em;
+
+	b {
+		border: none;
+
+		&:before {
+			color: $grey600;
+			font-size: 1.1rem;
+		    margin-left: 4px;
+		    margin-top: -9px;
+		    position: absolute;
+		    top: 50%;
+			transform: translateY(-50%);
+
+			font-family: 'coronita';
+			content: $ico-cm_chev;
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+	}
+}
+
+//controls placeholder color
+input[type="text"],
+textarea,
+.form-group-bbva input[type="text"],
+.form-group-bbva input[type="email"],
+.form-group-bbva input[type="tel"],
+.form-group-bbva input[type="url"],
+.form-group-bbva textarea{
+    &::-webkit-input-placeholder {
+     color: $grey500;
+     opacity: 1;
+    }
+
+    &:-moz-placeholder { //Firefox 18-
+     color: $grey500;  
+     opacity: 1;
+    }
+
+    &::-moz-placeholder {  // Firefox 19+
+     color: $grey500; 
+     opacity: 1; 
+    }
+
+    &:-ms-input-placeholder {  
+     color: $grey500; 
+     opacity: 1; 
+    }
+    &:placeholder-shown{ 
+        color: $grey500;
+        opacity: 1;
+    }
+}
+
+/* Fees Calculator */
+.fees-calculator ul li {
+	display: table;
+	padding-left: 0;
+	width: 100%;
+
+	&:before {
+		content: '';
+	}
+
+	&> * {
+		display: table-cell;
+		vertical-align: top;
+
+		.faux-box {
+			margin-right: 1.6rem;
+		}
+	}
+
+	&> label {
+		display: table;
+		font-family: $sans-serif-regular;
+		margin-right: 5%;
+
+		&> * {
+			display: table-cell;
+			vertical-align: top;
+		}
+	}
+
+	&> .fee-amount, &> .fees-total {
+		width: 10%;
+	}
+
+	&> .fee-amount {
+		color: $grey500;
+		font-family: $sans-serif-regular;
+	}
+
+	&.selected .fee-amount {
+		color: $grey600;
+		font-family: $sans-serif-regular;
+	}
+
+	.fees-label {
+		font-family: $sans-serif-bold;
+		padding-right: 5%;
+		text-align: right;
+	}
+
+	.fees-total {
+		font-family: $sans-serif-bold;
+	}
+}
+
+/* "Faux Box" - Used to style checkboxes */
+.remember-me,
+.form-group-bbva{
+  input[type="checkbox"] {
+      display:none;
+
+      &:checked + label .faux-box:before {
+        color: $grey600;
+        content: $ico-cm_checkmark;
+        font-family: 'coronita';
+        font-size: 1.3em;
+        line-height: 1.2;
+        padding: 0.2em;
+      }
+  }
+
+  label {
+    color: $grey600;
+    cursor: pointer;
+    font-family: $sans-serif-medium;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    .faux-box{
+        background-color: $grey100;
+        border-radius: 2px;
+        box-shadow: $inset-shadow;
+        display: inline-block;
+        margin-right: 8px;
+        position: relative;
+        height: 26px;
+        width: 26px;
+        //borders
+        border: 1px solid $grey200;
+        border-top: none;
+        border-left: none;
+        box-shadow: none;
+        box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.15);
+    }
+  }
+}
+
+/* "Faux Radio" - Used to style radio buttons */
+.form-group-bbva .radio-button {
+	margin-bottom: 1rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	input[type="radio"] {
+		display: none;
+
+		&:checked + label .faux-radio:after {
+			content: ' ';
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			position: absolute;
+			top: 4px;
+			background: $blue-core;
+			left: 4px;
+		}
+	}
+
+	label {
+		font-family: $sans-serif;
+	}
+
+	.faux-radio {
+		-webkit-appearance: none;
+		background-color: $white;
+		border: 1px solid $grey300;
+		padding: 10px;
+		border-radius: 50%;
+		display: inline-block;
+		position: relative;
+		margin-right: 1rem;
+	}
+} 
+
+// .form-group-bbva .radio-button input[type="radio"]:checked + label .faux-radio {
+// 	background-color: #e9ecee;
+// 	color: #99a1a7;
+// 	border: 1px solid #adb8c0;
+// }
+
+/* CRM Disposition Buttons */
+.crm-disposition-buttons {
+  .form-group-bbva .select2 .select2-selection {
+    background-color: $blue-medium-wcag;
+    font-family: $sans-serif-bold;
+    padding-right: 3.8rem;
+  }
+}
+
+html:not(.touchevents) .crm-disposition-buttons {
+  .form-group-bbva .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: $white;
+  }
+
+  .form-group-bbva .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 2.4rem;
+  }
+
+  .form-group-bbva .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+    color: $white;
+    font-size: 1.6rem;
+  }
+
+  form input, form textarea, .form-group-bbva input[type="text"], .form-group-bbva input[type="email"], .form-group-bbva input[type="tel"], .form-group-bbva input[type="url"], .form-group-bbva textarea, .form-group-bbva select, .form-group-bbva .select2-container--default .select2-selection--single .select2-selection__rendered {
+  	background: transparent;
+  	font-family: $sans-serif-bold;
+  }
+}
+.select2-container--open .select2-results__option:first-child {
+    display: none;
+}
+
+/* Wufoo Form Snippet Padding Fix */
+#main-form-container {
+    padding-top: 0.6em;
+}

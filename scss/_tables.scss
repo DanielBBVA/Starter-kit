@@ -1,0 +1,166 @@
+
+
+/* Tables */
+
+// Default Table - Grey
+
+table {
+  background-color: $white;
+  font-family: $sans-serif;
+  margin: 1em 0 5em;
+
+  th, td {
+    vertical-align: top;
+  }
+
+  th {
+    border-right: 1px solid $grey200;
+    border-bottom: 1px solid $grey200;
+    font-family: $sans-serif-medium;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1em 4.5rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $grey200;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  td {
+    border-right: 1px solid $grey200;
+    padding: 2.5em 4.5rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+// On a background color
+.container-fluid table {
+  th:first-child, td:first-child {
+    padding-left: 2em;
+  }
+}
+
+// Table Colors
+
+.table-light-blue th {
+  border-bottom: 1px solid $blue-light;
+}
+
+.table-core-blue th {
+  border-bottom: 1px solid $blue-core;
+}
+
+/* Pew Disclosure Tables */
+
+table.pew {
+  font-size: 1.5rem;
+  margin: 0.5em 0 3em;
+  width: 100%;
+
+  tr {
+    border-right: 1px solid $grey200;
+    border-left: 1px solid $grey200;
+    border-top: 1px solid $grey200;
+
+    &:last-child {
+      border-bottom: 1px solid $grey200;
+    }
+  }
+
+  td, td:first-child {
+    padding: 1.2rem 1.7rem;
+    vertical-align: middle;
+  }
+
+  .pew-title, th {
+    background-color: $navy;
+    color: $white;
+    font-family: $sans-serif-bold;
+    line-height: 1.6;
+    text-align: right;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 14%;
+
+    &.visible-xs {
+      text-align: left;
+    }
+  }
+
+  th {
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .pew-description {
+    color: $grey500;
+    font-family: $sans-serif-medium;
+    text-align: right;
+    width: 33%;
+
+    &.text-left {
+      text-align: left;
+    }
+
+    &.text-center {
+      text-align: center;
+    }
+
+    em {
+      font-family: $sans-serif;
+    }
+  }
+
+  .pew-fee {
+    background-color: $grey100;
+    font-family: $sans-serif-medium;
+    text-align: center;
+
+    &.text-left {
+      text-align: left;
+    }
+
+    &.text-right {
+      text-align: right;
+    }
+  }
+
+  /* Three Column Table */
+  // One column is table title; Two columns of table data
+  // .pew-description should take up half the table width
+  &.pew-three-col td:not(.pew-title) {
+    width: 35%;
+  }
+}
+
+/* Disclosure Tables */
+
+table.disclosure {
+  color: $grey600;
+  font-size: 1.2rem;
+
+  td {
+    border: 1px solid $grey600;
+    padding: 0.7em;
+  }
+}

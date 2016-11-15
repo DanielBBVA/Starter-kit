@@ -1,0 +1,269 @@
+@import "variables";
+
+@font-face {
+  font-family: 'bbva-cm-icons';
+  src:  url('#{$icomoon-font-path}/bbva-cm-icons.eot?bqmxfj');
+  src:  url('#{$icomoon-font-path}/bbva-cm-icons.eot?bqmxfj#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/bbva-cm-icons.ttf?bqmxfj') format('truetype'),
+    url('#{$icomoon-font-path}/bbva-cm-icons.woff?bqmxfj') format('woff'),
+    url('#{$icomoon-font-path}/bbva-cm-icons.svg?bqmxfj#bbva-cm-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-cm"], [class*=" ico-cm"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-cm-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-cm_alarm {
+  &:before {
+    content: $ico-cm_alarm;
+  }
+}
+.ico-cm_alert {
+  &:before {
+    content: $ico-cm_alert;
+  }
+}
+.ico-cm_appstore {
+  &:before {
+    content: $ico-cm_appstore;
+  }
+}
+.ico-cm_audio {
+  &:before {
+    content: $ico-cm_audio;
+  }
+}
+.ico-cm_BBVAcontigo {
+  &:before {
+    content: $ico-cm_BBVAcontigo;
+  }
+}
+.ico-cm_bluetooth {
+  &:before {
+    content: $ico-cm_bluetooth;
+  }
+}
+.ico-cm_camera {
+  &:before {
+    content: $ico-cm_camera;
+  }
+}
+.ico-cm_clock {
+  &:before {
+    content: $ico-cm_clock;
+  }
+}
+.ico-cm_communication {
+  &:before {
+    content: $ico-cm_communication;
+  }
+}
+.ico-cm_email {
+  &:before {
+    content: $ico-cm_email;
+  }
+}
+.ico-cm_facebook {
+  &:before {
+    content: $ico-cm_facebook;
+  }
+}
+.ico-cm_facebook2 {
+  &:before {
+    content: $ico-cm_facebook2;
+  }
+}
+.ico-cm_favorite {
+  &:before {
+    content: $ico-cm_favorite;
+  }
+}
+.ico-cm_googleplus {
+  &:before {
+    content: $ico-cm_googleplus;
+  }
+}
+.ico-cm_googleplus2 {
+  &:before {
+    content: $ico-cm_googleplus2;
+  }
+}
+.ico-cm_gooplay2 {
+  &:before {
+    content: $ico-cm_gooplay2;
+  }
+}
+.ico-cm_hashtag {
+  &:before {
+    content: $ico-cm_hashtag;
+  }
+}
+.ico-cm_help {
+  &:before {
+    content: $ico-cm_help;
+  }
+}
+.ico-cm_info {
+  &:before {
+    content: $ico-cm_info;
+  }
+}
+.ico-cm_instagram {
+  &:before {
+    content: $ico-cm_instagram;
+  }
+}
+.ico-cm_instagram2 {
+  &:before {
+    content: $ico-cm_instagram2;
+  }
+}
+.ico-cm_language {
+  &:before {
+    content: $ico-cm_language;
+  }
+}
+.ico-cm_linkedin {
+  &:before {
+    content: $ico-cm_linkedin;
+  }
+}
+.ico-cm_linkedin2 {
+  &:before {
+    content: $ico-cm_linkedin2;
+  }
+}
+.ico-cm_microphone {
+  &:before {
+    content: $ico-cm_microphone;
+  }
+}
+.ico-cm_mobiledisconnected {
+  &:before {
+    content: $ico-cm_mobiledisconnected;
+  }
+}
+.ico-cm_nfcconnect {
+  &:before {
+    content: $ico-cm_nfcconnect;
+  }
+}
+.ico-cm_nfcdisconnect {
+  &:before {
+    content: $ico-cm_nfcdisconnect;
+  }
+}
+.ico-cm_pause {
+  &:before {
+    content: $ico-cm_pause;
+  }
+}
+.ico-cm_pinterest {
+  &:before {
+    content: $ico-cm_pinterest;
+  }
+}
+.ico-cm_pinterest2 {
+  &:before {
+    content: $ico-cm_pinterest2;
+  }
+}
+.ico-cm_play {
+  &:before {
+    content: $ico-cm_play;
+  }
+}
+.ico-cm_quotemark {
+  &:before {
+    content: $ico-cm_quotemark;
+  }
+}
+.ico-cm_reademail {
+  &:before {
+    content: $ico-cm_reademail;
+  }
+}
+.ico-cm_reply {
+  &:before {
+    content: $ico-cm_reply;
+  }
+}
+.ico-cm_retweet {
+  &:before {
+    content: $ico-cm_retweet;
+  }
+}
+.ico-cm_send {
+  &:before {
+    content: $ico-cm_send;
+  }
+}
+.ico-cm_share {
+  &:before {
+    content: $ico-cm_share;
+  }
+}
+.ico-cm_slideshare {
+  &:before {
+    content: $ico-cm_slideshare;
+  }
+}
+.ico-cm_slideshare2 {
+  &:before {
+    content: $ico-cm_slideshare2;
+  }
+}
+.ico-cm_support {
+  &:before {
+    content: $ico-cm_support;
+  }
+}
+.ico-cm_telephone {
+  &:before {
+    content: $ico-cm_telephone;
+  }
+}
+.ico-cm_twitter {
+  &:before {
+    content: $ico-cm_twitter;
+  }
+}
+.ico-cm_twitter2 {
+  &:before {
+    content: $ico-cm_twitter2;
+  }
+}
+.ico-cm_videochat {
+  &:before {
+    content: $ico-cm_videochat;
+  }
+}
+.ico-cm_videoplayline {
+  &:before {
+    content: $ico-cm_videoplayline;
+  }
+}
+.ico-cm_youtube {
+  &:before {
+    content: $ico-cm_youtube;
+  }
+}
+.ico-cm_youtube2 {
+  &:before {
+    content: $ico-cm_youtube2;
+  }
+}
+

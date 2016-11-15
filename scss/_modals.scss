@@ -1,0 +1,167 @@
+
+
+/* Modal - Default */
+.modal-dialog {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  width: 90%
+}
+.modal-content {
+  border-radius: 0;
+
+  .modal-close {
+    display: block;
+    float: right;
+    font-size: 2rem;
+    position: relative;
+    margin: 30px 30px 0 0;
+    z-index: 2;
+
+    &:hover, .icon:hover {
+      border-bottom: none !important;
+    }
+  }
+
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .modal-body {
+    color: $grey600;
+    padding: 4.5em 6em 3.5em;
+  }
+
+  .modal-footer {
+    border-top: none;
+    padding: 0;
+    
+    // Footer button is (for now) only used on the maintenance message/alert modal
+    // Keeping it in default as we may use this pattern in the future on other modals
+    .btn {
+      font-size: 2rem;
+      margin-bottom: 0;
+      padding: 1.3em;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* Alert Modal */
+.modal-alert {
+
+  .modal-dialog {
+    margin: 85px auto;
+    max-width: 500px;
+  }
+
+  .modal-header {
+    .icon {
+      border: 8px solid #fff;
+      border-radius: 50%;
+      display: table;
+      font-size: 5rem;
+      margin: -1.4em auto -0.4em;
+      padding: 0.5em;
+    }
+  }
+
+  .modal-content .modal-body {
+    font-size: 1.1em;
+    padding: 3.5em 6em;
+  }
+}
+
+/* Alert Modal - Disclosures */
+// Used to email a disclosure
+#email-disclosure .modal-content .modal-body {
+  padding: 2em;
+
+  form {
+    margin-bottom: 0;
+  }
+
+  #ctaSpinner {
+    display: block;
+    margin: 1em auto;
+  }
+}
+
+#email-disclosure .modal-dialog {
+  max-width: 560px;
+}
+
+/* Video Modal */
+.modal-video {
+  .modal-close {
+    border-radius: 50%;
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.7rem;
+    margin-top: -1em;
+    padding: 0.5em;
+    position: absolute;
+    right: -0.9em;
+    z-index: 1;
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
+
+  .modal-dialog {
+    margin-top: 5em;
+    width: 67%;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}
+
+/* City - State Selector */
+#choose-region-error{
+    color: $red-dark;
+    padding-top: 2em;
+    display: none;  
+}
+
+.chooseRegion {
+  .modal-dialog {
+    max-width: 70%;
+    width: 750px;
+  }
+
+  .modal-body {
+    background-color: $grey100;
+  }
+
+  .btn[type=submit] {
+    margin-right: 10%;
+  }
+
+  fieldset {
+    margin-bottom: 2em;
+  }
+
+  // .select2-selection__rendered[title="Choose Your State"]:before,
+  // .select2-selection__rendered[title="Choose Your City"]:before {
+  //   color: $grey400;
+  //   display: inline-block;
+  //   position: relative;
+  //   font-family: 'coronita';
+  //   content: $ico-cm_info;
+  //   padding-right: 8px;
+  // }
+}
+.select2-results__option {
+  padding: 6px 0 6px 24px;
+}
+
+/* Modal within CTA Aside */
+.text-center .modal-content {
+  text-align: left;
+}

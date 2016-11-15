@@ -1,0 +1,15 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/my-app.html",
+  "fragments": [
+  ],
+  "sourceGlobs": [
+   "src/**/*",
+   "img/**/*",
+   "bower.json"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "components/webcomponentsjs/webcomponents-lite.min.js"
+  ]
+}

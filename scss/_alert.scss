@@ -1,0 +1,104 @@
+
+
+/* Base Alert Message */
+
+.alert-msg {
+  background-color: $yellow-white;
+  height: auto;
+
+  .alert-msg-body {
+    display: table;
+    padding: 0.75em 0 1.375em;
+
+    &> * {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+
+  .icon {
+    color: $red-dark;
+    padding-top: 0.2em;
+    transition: $color-fast;
+  }
+
+  h2, h3, h4, p {
+    padding: 0 1.5em;
+  }
+
+  p {
+    font-family: $sans-serif;
+  }
+
+  a {
+    color: $red-dark;
+
+    &:hover {
+      color: $grey600;
+    }
+  }
+
+  a, a:hover, a:active, a:focus {
+    border-bottom: none;
+  }
+
+  .bbva-coronita_close {
+    display: block;
+    margin-top: 0.2em;
+
+    &:hover, &:active, &:focus {
+      color: $red-dark;
+    }
+  }
+}
+
+// ------------------------------------- //
+
+/* Outdated Browser Alert */
+
+#browser-alert {
+    background-color: $red-white;
+    padding: 0;
+
+    h2 {
+        padding-right: 0;
+        width: 27%;
+    }
+
+    p {
+        vertical-align: middle;
+    }
+
+    .alert-msg-body {
+      padding: 2em 0;
+    }
+}
+
+// ------------------------------------- //
+
+/* OLB Maintenance Message - Link */
+
+// Modal Trigger Link
+body > header.container-fluid .maintenance-notice-toggle {
+  color: $blue-medium-wcag;
+  font-family: $sans-serif-medium;
+  // font-size: 1.25em;
+  display: table;
+  margin-top: 0.9em;
+  margin-bottom: -2em;
+
+  &:hover {
+    color: $blue-core;
+  }
+
+  span {
+    font-size: 1.1em;
+    padding-right: 0.7em;
+
+    &:before {
+      display: inline-block;
+      margin-top: -5px;
+      vertical-align: middle;
+    }
+  }
+}

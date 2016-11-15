@@ -1,0 +1,306 @@
+
+
+/* Colors */
+
+// Special Colors
+
+.white {
+	color: $white;
+}
+
+.bg-white {
+	background-color: $white;
+}
+
+.bg-primary {
+	background-color: $grey100;
+	color: $grey600;
+}
+
+.bg-secondary {
+	background-color: $blue-white;
+	color: $grey600;
+}
+
+// Primary Colors
+.navy {
+	color: $navy;
+}
+.bg-navy {
+	background-color: $navy;
+}
+
+.blue-core {
+	color: $blue-core;
+}
+.bg-blue-core {
+	background-color: $blue-core;
+}
+
+.blue-medium {
+	//color: $blue-medium;
+	color: $blue-medium-wcag;
+}
+.bg-blue-medium {
+	background-color: $blue-medium;
+}
+
+.blue-light {
+	color: $blue-light;
+}
+.bg-blue-light {
+	background-color: $blue-light;
+}
+.bg-blue-white {
+	background-color: $blue-white;
+}
+.bg-blue-white-light{
+    background-color: $blue-white-light
+}
+
+/*---------------*/
+//Secondary Colors
+.aqua {
+	color: $aqua;
+}
+.bg-aqua {
+	background-color: $aqua;
+}
+.aqua-white {
+	color: $aqua-white;
+}
+.bg-aqua-white {
+	background-color: $aqua-white;
+}
+.aqua-light {
+	color: $aqua-light;
+}
+.bg-aqua-light {
+	background-color: $aqua-light;
+}
+.aqua-dark {
+	color: $aqua-dark;
+}
+.bg-aqua-dark {
+	background-color: $aqua-dark;
+}
+
+.grey600 {
+	color: $grey600;
+}
+.bg-grey600 {
+	background-color: $grey600;
+}
+.grey500 {
+	color: $grey500;
+}
+.bg-grey500 {
+	background-color: $grey500;
+}
+.grey400 {
+	color: $grey400;
+}
+.bg-grey400 {
+	background-color: $grey400;
+}
+.grey300 {
+	color: $grey300;
+}
+.bg-grey300 {
+	background-color: $grey300;
+}
+.grey200 {
+	color: $grey200;
+}
+.bg-grey200 {
+	background-color: $grey200;
+}
+.grey100 {
+	color: $grey100;
+}
+.bg-grey100 {
+	background-color: $grey100;
+}
+.white {
+	color: $white;
+}
+.bg-white {
+	background-color: $white;
+}
+
+/*---------------*/
+// Tertiary Colors
+.red {
+	color: $red;
+}
+.bg-red {
+	background-color: $red;
+}
+.red-white {
+	color: $red-white;
+}
+.bg-red-white {
+	background-color: $red-white;
+}
+.red-light {
+	color: $red-light;
+}
+.bg-red-light {
+	background-color: $red-light;
+}
+.red-dark {
+	color: $red-dark;
+}
+.bg-red-dark {
+	background-color: $red-dark;
+}
+
+.orange {
+	color: $orange;
+}
+.bg-orange {
+	background-color: $orange;
+}
+.orange-white {
+	color: $orange-white;
+}
+.bg-orange-white {
+	background-color: $orange-white;
+}
+.orange-light {
+	color: $orange-light;
+}
+.bg-orange-light {
+	background-color: $orange-light;
+}
+.orange-dark {
+	color: $orange-dark;
+}
+.bg-orange-dark {
+	background-color: $orange-dark;
+}
+
+.yellow {
+	color: $yellow;
+}
+.bg-yellow {
+	background-color: $yellow;
+}
+.yellow-white {
+	color: $yellow-white;
+}
+.bg-yellow-white {
+	background-color: $yellow-white;
+}
+.yellow-light {
+	color: $yellow-light;
+}
+.bg-yellow-light {
+	background-color: $yellow-light;
+}
+.yellow-dark {
+	color: $yellow-dark;
+}
+.bg-yellow-dark {
+	background-color: $yellow-dark;
+}
+
+.gold {
+	color: $gold;
+}
+.bg-gold {
+	background-color: $gold;
+}
+.gold-white {
+	color: $gold-white;
+}
+.bg-gold-white {
+	background-color: $gold-white;
+}
+.gold-light {
+	color: $gold-light;
+}
+.bg-gold-light {
+	background-color: $gold-light;
+}
+.gold-dark {
+	color: $gold-dark;
+}
+.bg-gold-dark {
+	background-color: $gold-dark;
+}
+
+.green {
+	color: $green;
+}
+.bg-green {
+	background-color: $green;
+}
+.green-white {
+	color: $green-white;
+}
+.bg-green-white {
+	background-color: $green-white;
+}
+.green-light {
+	color: $green-light;
+}
+.bg-green-light {
+	background-color: $green-light;
+}
+.green-dark {
+	color: $green-dark;
+}
+.bg-green-dark {
+	background-color: $green-dark;
+}
+
+.pink {
+	color: $pink;
+}
+.bg-pink {
+	background-color: $pink;
+}
+.pink-white {
+	color: $pink-white;
+}
+.bg-pink-white {
+	background-color: $pink-white;
+}
+.pink-light {
+	color: $pink-light;
+}
+.bg-pink-light {
+	background-color: $pink-light;
+}
+.pink-dark {
+	color: $pink-dark;
+}
+.bg-pink-dark {
+	background-color: $pink-dark;
+}
+
+.purple {
+	color: $purple;
+}
+.bg-purple {
+	background-color: $purple;
+}
+.purple-white {
+	color: $purple-white;
+}
+.bg-purple-white {
+	background-color: $purple-white;
+}
+.purple-light {
+	color: $purple-light;
+}
+.bg-purple-light {
+	background-color: $purple-light;
+}
+.purple-dark {
+	color: $purple-dark;
+}
+.bg-purple-dark {
+	background-color: $purple-dark;
+}

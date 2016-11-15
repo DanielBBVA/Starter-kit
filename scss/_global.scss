@@ -1,0 +1,62 @@
+// Base CSS
+@import '_variables';
+@import '_mixins';
+//font icons all category
+@import 'bbva-fop-icons/style';
+@import 'bbva-cm-icons/style';
+@import 'bbva-sn-icons/style';
+@import 'bbva-to-icons/style';
+@import 'bbva-oa-icons/style';
+@import '_structure';
+@import '_typography';
+
+// Using Select2 to style select box form fields
+@import '../vendor/select2/src/scss/core.scss';
+
+// Component CSS
+@import '_accordions';
+@import '_alert';
+@import '_badges';
+@import '_blog';
+@import '_buttons';
+@import '_call-outs';
+@import '_cards';
+@import '_cta-aside';
+@import '_dropdown-nav';
+@import '_features-benefits';
+@import '_footer';
+//@import '_forms';
+@import '_header';
+@import '_hero';
+@import '_hero-secondary';
+@import '_hero-promo'; 
+@import '_image-header';
+@import '_inline-nav';
+@import '_modals';
+@import '_mobile-nav';
+@import '_most-popular';
+@import '_parallax';
+@import '_product-block';
+@import '_promo-banner';
+@import '_secondary-content';
+@import '_sign-off-ads';
+@import '_sitemap';
+@import '_tables';
+//@import '_tabs';
+@import '_search-results';
+@import '_sticky-header';
+@import '_shopping-cart';
+@import '_svg-icons';
+
+// Animation Classes
+@import '_animation';
+
+// Helper Classes - Ability to Override Defaults
+@import '_helper-css';
+
+// Color Classes - Ability to Override Colors
+@import '_colors';
+
+
+@import '_media-query-global';
+

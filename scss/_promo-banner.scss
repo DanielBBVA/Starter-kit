@@ -1,0 +1,76 @@
+
+
+.promo-banner{
+    background-image: url(/coronita/pub/img/hero-bg-medium-blue.svg); 
+    background-size:cover;
+    background-position: center bottom;
+    display: flex;
+    max-height: 35rem;
+    height: 33rem; 
+    // max-height:35rem;    
+    position: relative;
+    overflow: hidden;
+    
+    .promo-content{
+        flex-grow: 2;
+        padding: 5rem;
+        width: 50%;
+    }
+    
+    .promo-img{
+        display: flex;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+        width: 50%; 
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+html>body .promo-banner { 
+    height: auto;
+}
+
+
+.promo-full-width,
+.promo-full-width-slant{
+    background-image: url(/coronita/pub/img/hero-bg-medium-blue.svg); 
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+
+.promo-full-width .promo-banner,
+.promo-full-width-slant .promo-banner{
+    background:none;
+}
+
+
+/*Vertical Slant Full Witdth*/
+.promo-full-width-slant .promo-img{
+    position: absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height: 100%;
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    background-size: cover;
+    background-position: center top;
+} 
+
+.promo-full-width-slant .promo-banner .promo-content {
+    padding: 5rem 0;
+}
+
+.promo-full-width-slant .promo-content h1{
+    margin-bottom: 1.5rem;
+}
+
+.promo-full-width-slant .promo-content p{
+    margin-bottom: 4rem;
+}

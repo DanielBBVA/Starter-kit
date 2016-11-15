@@ -1,0 +1,2322 @@
+
+
+/* Media Queries */
+// Please use max-width only. 
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 1400px / 87.5em
+// ---------------------------------------------------------------------------------------------- //
+
+@media (max-width: 87.5em) {
+  // ------------------------- //
+  // Hero
+  // ------------------------- //
+
+  // Secondary, Showcase
+  .hero-showcase {
+    margin-bottom: 4em;
+
+    .hero-img-wrapper {
+      left: 0;
+      margin-left: 0;
+      right: 0;
+      width: 100%;
+
+      .hero-img {
+        right: 0;
+        width: 62%;
+        top: 9vw;
+
+        img {
+          right: -9%;
+        }
+      }
+    }
+  }
+
+} // end max-width: 87.5em
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 1200px / 75em
+// ---------------------------------------------------------------------------------------------- //
+
+@media (max-width: 75em) {
+
+  // ------------------------- //
+  // Structural / Typography
+  // ------------------------- //
+
+  .hero-h1, .hero h1, h1.hero, .hero-h1 a, .hero h1 a, h1.hero a {
+    font-size: 6rem;
+  }
+
+  h2, .h2 {
+    font-size: 3.6rem;
+  }
+
+  blockquote {
+    margin: 3em 10%;
+  }
+
+  // ------------------------- //
+  // Header
+  // ------------------------- //
+  body > header.container-fluid nav.navbar {
+    margin-bottom: 1.5625em;
+
+    .navbar-header {
+      padding-top: 1.5625em;
+    }
+  }
+
+  #header-sign-in-mobile .sign-in-form {
+    flex-wrap: wrap;
+
+    h2 {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+
+  /* Commercial Sign-In */
+  #header-sign-in-mobile .sign-in-commercial .sign-in-form {
+    margin-top: -1em;
+
+    h2 {
+      margin-bottom: 0.7em;
+      padding-right: 0;
+    }
+
+    &> div {
+      margin-left: 0;
+    }
+  }
+
+  // ------------------------- //
+  // Header Navigation
+  // Overriding Bootstrap Navbar Breakpoint
+  // ------------------------- //
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+
+
+  // ------------------------- //
+  // SIDR - Mobile Nav
+  // ------------------------- //
+    li.sidr-class-hidden-btn {
+      display: none !important;
+    }
+
+    .sidr ul.sidr-class-sidr-hidden, #sidr-id-header-sign-in {
+      display: none !important;
+    }
+  // ------------------------- //
+
+  // ------------------------- //
+  // Buttons
+  // ------------------------- //
+
+  .btn-lg {
+      padding: 1.85rem 5rem;
+  }
+
+  // ------------------------- //
+  // Hero
+  // ------------------------- //
+
+  // Primary
+  .hero-main, .hero-secondary {
+    min-height: none;
+    min-height: 5vh;
+  }
+
+  // Secondary, Showcase
+  .hero-showcase {
+    margin-bottom: 6.5em;
+    min-height: 500px;
+
+    .hero-text {
+      width: 50%;
+    }
+
+    .hero-img-wrapper {
+
+      .hero-img {
+        width: 55%;
+        top: 4.25vw;
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Modals
+  // ------------------------- //
+
+  /* Video Modal */
+
+  .modal-video {
+  .modal-dialog {
+      margin-top: 3em;
+      width: 80%;
+    }
+  }
+
+  /* City - State Selector Modal */
+  .chooseRegion {
+    .modal-dialog {
+      margin: 30px auto;
+    }
+  }
+
+  // ------------------------- //
+  // Cards
+  // ------------------------- //
+
+  /* Cards - Image "Break" Layout */
+
+  .bbva-cards .card-block {
+    .card-img-break {
+        img {
+            max-width: 80%;
+        }
+      }
+    }
+
+  // ------------------------- //
+  // Most Popular
+  // ------------------------- //
+
+  .most-popular .most-popular-wrapper {
+    .most-popular-product {
+      padding: 0 1.5em 2em;
+
+      .most-popular-marker span {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+} // end max-width: 75em
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 992px / 61.9375em
+// ---------------------------------------------------------------------------------------------- //
+
+@media (max-width: 61.9375em) { // 992px
+
+  // ------------------------- //
+  // Structural / Typography
+  // ------------------------- //
+
+  .hero-h1, .hero h1, h1.hero, .hero-h1 a, .hero h1 a, h1.hero a {
+    //font-size: 3.8em;
+    font-size: 4.9rem;
+  }
+
+  h1, .h1 {
+    //font-size: 3em;
+    font-size: 4.9rem;
+  }
+
+  blockquote.blockquote-aside {
+    float: none;
+    margin: 3em 10%;
+    padding: 3em;
+    width: auto;
+  }
+
+  hr {
+    margin: 1.5em auto;
+  }
+
+  .img-responsive {
+    max-width: 85%;
+  }
+
+  .page-header {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  // ------------------------- //
+  // Header
+  // ------------------------- //
+
+  /* Commercial Sign-In */
+  #header-sign-in-mobile .sign-in-commercial .sign-in-form {
+    margin-top: 0;
+
+    h2 {
+      margin-bottom: 0.7em;
+    }
+
+    .btn {
+      margin-bottom: 1em;
+      width: 100%;
+    }
+  }
+
+  // ------------------------- //
+  // Footer - Basic
+  // ------------------------- //
+
+  footer {
+    padding: 3.8em 0;
+  }
+
+  footer .social-media ul a {
+    margin-left: 0.325em;
+  }
+
+  // ------------------------- //
+  // Prefooter
+  // ------------------------- //
+
+  .pre-footer {
+    padding: 3em 0 4.375em;
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex div:nth-child(1), .flex div:nth-child(2) {
+      padding-bottom: 2em;
+    }
+
+    .flex div:nth-child(1), .flex div:nth-child(3) {
+      border-right: 1px solid $grey200;
+    }
+
+    .flex div:nth-child(2), .flex div:nth-child(4) {
+      padding-left: 4em;
+    }
+
+    .flex div:nth-child(3), .flex div:nth-child(4) {
+      border-top: 1px solid $grey200;
+      padding-top: 2em;
+    }
+  }
+
+  .container-fluid.pre-footer-alt {
+
+    .flex div:nth-child(1), .flex div:nth-child(3) {
+      border-right: 1px solid $grey100;
+    }
+
+    .flex div:nth-child(3), .flex div:nth-child(4) {
+      border-top: 1px solid $grey100;
+    }
+  }
+
+  // ------------------------- //
+  // Footer - Full
+  // ------------------------- //
+
+  .footer-full nav {
+    flex-wrap: wrap;
+
+    & div:nth-child(3), & div:nth-child(4) {
+      border-top: 1px solid $blue-core;
+      padding-top: 3em;
+    }
+  }
+
+  // ------------------------- //
+  // Buttons
+  // ------------------------- //
+
+  /* CRM Disposition Buttons */
+  .crm-disposition-buttons .icon-link {
+    display: block;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // ------------------------- //
+  // Cards
+  // ------------------------- //
+
+  .bbva-cards {
+    .lead {
+      padding: 0 7%;
+    }
+
+    .view-more {
+        padding-top: 3em;
+    }
+
+    .card-block {
+    flex-wrap: wrap;
+
+      [class*="col"] {
+        margin-bottom: 30px;
+      }
+
+      .card-wrap {
+        display: flex;
+
+        .card-img {
+            height: auto;
+            width: 40%;
+            margin: 0 15px 0 0;
+        }
+
+        .card-text {
+          padding: 30px;
+          width: 60%;
+        }
+
+        .faux-link {
+          left: 41.5%;
+        }
+      }
+    }
+  }
+
+  /* Stacking cards don't need extra margin and padding */
+  .bbva-cards.card-stack {
+      padding-bottom: 0;
+  }
+
+  /* Editorial Layout */
+  .bbva-cards-editorial {
+    .card-block {
+
+      .card-wrap {
+
+        h3 {
+          padding-top: 0;
+        }
+      }
+
+      .image-header-overlay {
+        display: none;
+      }
+
+      [class*="col"]:first-child, [class*="col"]:last-child {
+        .card-wrap {
+          .card-img {
+              height: auto;
+              width: 40%;
+          }
+
+          .card-text {
+              margin-bottom: 2rem;
+              margin-top: 0;
+              max-height: unset;
+              width: 60%;
+          }
+
+          .article-category {
+              color: $grey400;
+              margin-bottom: 0.7em;
+          }
+
+          h3 {
+              color: $grey600;
+              font-size: 2.6rem;
+              height: auto;
+              margin-bottom: 0.4em;
+          }
+
+          .faux-link {
+            left: 41.5%;
+          }
+
+          //  .article-tags {
+          //   left: 41.5%;
+          // }
+        }
+
+      }
+
+    }
+  }
+
+  /* Editorial Layout, Flipped (Alternate) */
+
+  .bbva-cards-editorial-alternate .card-block {
+    flex-direction: column-reverse;
+  }
+
+  /* Image "Break" Layout */
+
+  .bbva-cards .card-block {
+    .card-img-break {
+        margin-top: 0;
+
+        img {
+            margin: 2em auto;
+        }
+    }
+  }
+
+  /* Video Cards */
+
+  .bbva-cards .card-block {
+    .card-video {
+      .bbva-coronita_video-play {
+        left: 26%;
+        top: 30%;
+      }
+
+      .card-img, .image-header-overlay {
+          height: auto;
+          min-height: 180px;
+          width: 50%;
+      }
+
+      .image-header-overlay {
+        height: 100%;
+        width: 49%;
+      }
+
+      .card-text {
+          width: 50%;
+      }
+
+      .faux-link {
+        left: 51.5%;
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Hero
+  // ------------------------- //
+
+  // Secondary, Default
+  .hero-secondary {
+    padding: 5em 0;
+
+    .hero-text {
+      font-size: 0.9em;
+    }
+
+    .img-responsive {
+      padding-right: 0;
+    }
+  }
+
+  // Secondary, Text on Left
+  .hero-secondary.hero-text-left {
+    .img-responsive {
+      padding: 0;
+    }
+  }
+
+  // Secondary, Showcase
+  .hero-showcase {
+    margin-bottom: 1em;
+    padding: 1em 0;
+
+    .hero-text {
+      font-size: 1em;
+      width: 55%;
+    }
+
+    .hero-img-wrapper {
+
+      .hero-img {
+        width: 63%;
+
+        img {
+          margin: 0;
+          right: -30%;
+        }
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Image Header
+  // ------------------------- //
+
+  .image-header {
+    height: 225px;
+    margin-bottom: 4.5em;
+
+    h1.hero {
+      font-size: 5rem;
+    }
+
+    .container {
+        width: 83.33333333%;
+    }
+  }
+
+  /* Video Full-Width Image Header */
+  .video-full-width a .bbva-coronita_video-play {
+    font-size: 5.75rem;
+  }
+
+
+  /*Product Header*/
+    .image-header.product-header{
+        margin-bottom: 20%;
+
+        .card-img {
+            max-width:35vw;
+        }
+    }
+
+
+  // ------------------------- //
+  // Product Block
+  // ------------------------- //
+
+  .product-block {
+    display: block;
+    padding: 2em 0;
+
+    .media-left, .media-right, .media-body {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .media-left, .media-right {
+      padding: 0 0 4em;
+
+      img {
+        float: none;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Secondary Content
+  // ------------------------- //
+
+  .secondary-content-3-col .secondary-content {
+    margin-right: 0;
+    padding-bottom: 2.75em;
+    width: 100%;
+  }
+
+  // ------------------------- //
+  // Features & Benefits
+  // ------------------------- //
+
+  .features-benefits-slide {
+    min-height: 625px;
+
+    .container {
+
+      &> div {
+        width: auto;
+
+        &> div {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+
+
+
+  // ------------------------- //
+  // Sign Off Ads
+  // ------------------------- //
+
+ .sign-off{
+     flex-flow: column wrap;
+
+     .so-large-ad{
+        margin-bottom: 3.2rem;
+        .row{
+            display: flex;
+            flex-flow: column wrap;
+
+            div:nth-child(2){
+                order:1;
+                img{
+                    max-width: 65%;
+                    margin: 0 auto;
+                    display: block;
+                    margin-bottom: 6rem;
+                }
+            }
+
+            div:nth-child(1){
+                order:2;
+                text-align: center;
+            }
+        }
+     }
+ }
+
+ // ------------------------- //
+  // Blog (Money Fit)
+  // ------------------------- //
+
+  /* Blog Author Page */
+
+  .image-header.image-header-blog {
+    h2 {
+      display: none;
+    }
+  }
+
+    // ------------------------- //
+  // sign-off
+  // ------------------------- //
+
+    .sign-off [class*="col"]:first-child{
+        margin-bottom: 3rem;
+    }
+    .sign-off [class*="col"]:first-child .lg-img img,
+    .sign-off [class*="col"]:first-child .lg-img svg,
+    .sign-off [class*="col"]:first-child .lg-img .img-responsive{
+        max-width:80%;
+    }
+
+    // ------------------------- //
+        // Shopping Cart / Card Selector
+    // ------------------------- //
+
+    #card-drawer .dropdown-only .dropdown-menu a{color:#000; padding: 0.5em 0.75em;}
+
+    #card-drawer .dropdown-menu li > a{
+        color:#000; padding: 0.5em 0.75em;
+    }
+
+    #card-drawer li.active .dropdown-menu li.active > a{
+        color:#227cca;
+    }
+
+    #card-drawer li.active .dropdown-menu li a{
+         color:#000;
+    }
+
+    #card-drawer .tab-content .tab-pane img.img-responsive{
+        margin:0 auto;
+        max-width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .card-selected{
+        margin:0 auto;
+        max-width: 60%;
+        margin-bottom: 2rem;
+    }
+    
+    
+    // ------------------------- //
+    // CTA Aside
+    // ------------------------- //
+    
+    .cta-aside .btn {
+        max-width:80%;
+    }
+    
+    
+    // ------------------------- //
+    // full width hero promo
+    // ------------------------- // 
+    
+    /*full width slant*/
+        .promo-full-width-slant .promo-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 35rem;
+            max-height: 35rem;
+            display: flex;
+            background-size: cover;
+            background-position: center top;
+           -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+        }
+    
+    
+        .promo-full-width-slant .promo-banner .promo-content {
+            order: 2;
+            text-align: center;
+            margin-top: 33rem;
+            padding: 2rem 0;
+        }
+    
+        .promo-full-width-slant .promo-content h1 {
+            font-size: 3.25rem;
+        }
+
+  // ------------------------- //
+  // Sitemap Page
+  // ------------------------- //
+
+  .sitemap {
+
+    .sitemap-section {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+    }
+
+  }
+    
+    
+        /* Create the parallax scrolling effect 
+        .parallax-scroll { 
+            background-attachment: initial;
+        }*/
+    
+
+} // end max-width: 61.9375em
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 768px / 48em
+// ---------------------------------------------------------------------------------------------- //
+
+@media (max-width: 48em) { // 768px
+
+  // ------------------------- //
+  // Structural / Typography
+  // ------------------------- //
+
+  body {
+    color: $grey600;
+  }
+
+  .hero-h1, .hero h1, h1.hero, .hero-h1 a, .hero h1 a, h1.hero a {
+    font-size: 5.3rem;
+  }
+
+  h1, .h1 {
+    font-size: 4.3rem;
+  }
+
+  h2, .h2 {
+    font-size: 3.4rem;
+  }
+
+  h3, .h3 {
+    font-size: 2.8rem;
+  }
+
+  h4, .h4 {
+    font-size: 2.6rem;
+  }
+
+  .lead {
+    font-size: 2rem;
+  }
+
+  .container-fluid {
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+  }
+
+  // ------------------------- //
+  // Header - Global
+  // ------------------------- //
+
+  #header-sign-in-mobile {
+    background-color: $grey100;
+    padding: 0 1.4em;
+
+    .sign-in-bg {
+      height: 230px;
+      width: 100%;
+
+      &.maintenance-notice-toggle-adjust {
+        height: 270px;
+      }
+
+      // CSS Triangle
+      &:after {
+        content: '\0000a0';
+        width: 0;
+        height: 0;
+        text-indent: -9999px;
+        border-left: 23px solid transparent;
+        border-right: 23px solid transparent;
+        border-top: 25px solid $white;
+        position: absolute;
+        display: block;
+        bottom: -24px;
+        left: 44.5%;
+
+        // Edge-smoothing in Firefox
+        -moz-transform: scale(.9999);
+      }
+    }
+
+    .sign-in-form {
+      background-color: transparent;
+      padding: 3em 0;
+    }
+
+    .sign-in-links {
+      background-color: transparent;
+      padding: 2em 0;
+
+      ul {
+        width: 100%;
+
+        li {
+          padding-bottom: 0.7em;
+        }
+      }
+    }
+  }
+
+  /* Commercial Sign-In */
+  #header-sign-in-mobile .sign-in-commercial .sign-in-form {
+    .btn {
+      width: 48%;
+    }
+  }
+
+  // Maintenance Message Link
+
+  body > header.container-fluid .maintenance-notice-toggle {
+    margin-bottom: 0;
+  }
+
+  // ------------------------- //
+  // Footer - Basic
+  // ------------------------- //
+
+  footer {
+    padding: 3.5em 0;
+  }
+
+  footer .tagline-container,
+  footer .social-media ul,
+  footer nav > ul {
+    justify-content: center;
+  }
+
+  // ------------------------- //
+  // Prefooter
+  // ------------------------- //
+
+  .pre-footer {
+    padding: 3.5em 0 2em;
+
+    .flex div{
+      padding: 0 15px 3em;
+      text-align: center;
+
+      ul li {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .btn {
+    @include btn-sm();
+    }
+
+    .flex div:nth-child(1), .flex div:nth-child(2) {
+      padding-bottom: 3em;
+    }
+
+    .flex div:nth-child(1), .flex div:nth-child(3) {
+      border-right: none;
+    }
+
+    .flex div:nth-child(2), .flex div:nth-child(4) {
+      padding-left: 15px;
+    }
+
+    .flex div:nth-child(3), .flex div:nth-child(4) {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+
+  // ------------------------- //
+  // Footer - Full
+  // ------------------------- //
+
+  .footer-full nav {
+    flex-wrap: wrap;
+    text-align: center;
+
+    & div:nth-child(3), & div:nth-child(4) {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+
+  // ------------------------- //
+  // Tables
+  // ------------------------- //
+
+  table {
+    margin: 0 0 3em;
+
+    th, td {
+      padding: 2.8rem;
+    }
+  }
+
+  // ------------------------- //
+  // Image Header
+  // ------------------------- //
+
+  .image-header.image-header-short {
+      height: 200px;
+  }
+
+  // ------------------------- //
+  // Cards
+  // ------------------------- //
+
+  .bbva-cards, .bbva-cards-editorial {
+
+    .lead {
+      padding: 0;
+    }
+
+    .card-block {
+      flex-wrap: wrap;
+
+      .card-wrap {
+        display: block;
+
+        .card-img {
+            height: 220px;
+            width: 100%;
+            margin: 0 1.375em 0 0;
+        }
+
+        .card-text {
+          width: 100%;
+        }
+
+        .faux-link {
+          left: auto;
+        }
+      }
+    }
+  }
+
+  /* Editorial Layout */
+  .bbva-cards-editorial {
+
+    .card-block [class*="col"]:first-child,
+    .card-block [class*="col"]:last-child  {
+
+      .card-wrap {
+        display: block;
+
+        .card-img {
+            height: 220px;
+            width: 100%;
+            margin: 0 1.375em 0 0;
+        }
+
+        .card-text {
+          width: 100%;
+        }
+
+        h3 {
+          padding-top: 0;
+        }
+
+        // .article-tags {
+        //   left: auto;
+        // }
+
+        .faux-link {
+          left: auto;
+        }
+      }
+    }
+  }
+
+  /* Image "Break" Layout */
+
+  .bbva-cards .card-block {
+    .card-img-break {
+      margin-top: 60px;
+
+      .card-img {
+        margin: 0 0 -2em;
+      }
+
+      img {
+          margin: -60px auto 1.75em;
+          max-width: 35%;
+      }
+    }
+  }
+
+  /* Video Cards */
+
+  .bbva-cards .card-block {
+    .card-video {
+      .bbva-coronita_video-play {
+        left: 53%;
+        top: 87px;
+      }
+
+      .image-header-overlay {
+        height: 220px;
+        width: 100%;
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Hero
+  // ------------------------- //
+
+  // Primary
+  .hero-main .hero-text {
+    font-size: 0.9em;
+    margin: 6.55vh 0;
+    width: 60%;
+
+    .btn {
+      @include btn();
+      margin-right: 1.75em;
+      margin-bottom: 1.75em;
+    }
+  }
+
+  // Secondary, Default
+  .hero-secondary {
+    text-align: center;
+
+    .row {
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      width: 100%;
+      padding: 1.75em 2em 0;
+
+      .hero-cta .btn {
+        margin: 0 auto;
+        @include btn-lg();
+      }
+    }
+
+    .img-responsive {
+      max-height: 60vw;
+    }
+  }
+
+  // Secondary, Text on Left
+  .hero-secondary.hero-text-left {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  // Secondary, Showcase
+  .hero-showcase {
+    flex-wrap: wrap;
+    padding: 3em 0 3.5em;
+
+    .hero-img-wrapper {
+      position: relative;
+      width: 100%;
+
+      .hero-img {
+        margin: 0 auto 1em;
+        max-width: 400px;
+        position: relative;
+        top: 0;
+        width: 70%;
+
+        img {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Inline Nav
+  // ------------------------- //
+
+  .inline-nav-item {
+    margin: 3em auto;
+
+    img {
+      max-width: 128px;
+    }
+
+    h2 {
+      color: $blue-medium-wcag;
+      font-size: 1.6rem;
+    }
+
+    &:hover h2 {
+      color: $navy;
+    }
+
+    .faux-link {
+      display: none;
+    }
+  }
+
+  // ------------------------- //
+  // Secondary Content
+  // ------------------------- //
+
+  .secondary-content-wrapper .secondary-content {
+    margin-right: 0;
+    padding-bottom: 2.75em;
+    width: 100%;
+  }
+
+  // ------------------------- //
+  // Features & Benefits
+  // ------------------------- //
+
+  .features-benefits {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .carousel-indicators li {
+      padding: 0;
+
+      &:not(.active) {
+        display: none;
+      }
+    }
+
+    .carousel-arrows {
+      display: flex;
+      position: absolute;
+    }
+  }
+
+  .features-benefits-slide {
+    min-height: 550px;
+  }
+
+  // ------------------------- //
+  // Modals
+  // ------------------------- //
+
+  /* Video Modal */
+
+  .modal-video {
+  .modal-dialog {
+      margin: 2em auto;
+      width: 90%;
+    }
+  }
+
+  /* City - State Selector Modal */
+  .chooseRegion {
+    .modal-dialog {
+      max-width: 100%;
+      margin: 15px;
+      width: auto;
+    }
+  }
+
+  // ------------------------- //
+  // Testimonials
+  // ------------------------- //
+    .testimonial{
+    position: relative;
+    padding:6rem 15%;
+        p{
+            font-size: 2.4rem;
+            &.attribution {
+                font-size: 1.7rem;
+                max-width: 100%;
+            }
+        }
+        &:before{
+            content: $ico-cm_quotemark;
+            font-family: 'bbva-cm-icons';
+            left: 40%;
+            right: 40%;
+            font-size: 5rem;
+            top: -3.5rem;
+            text-align: center;
+        }
+    }
+
+    // ------------------------- //
+    // Blog (Money Fit)
+    // ------------------------- //
+
+    /* Blog Author Page */
+
+    .blog-author-page {
+      margin-top: -40px;
+      padding-top: 0;
+
+      .img-round {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    .blog-author-page .blog-author-social {
+        display: block;
+        max-width: 70%;
+        position: absolute;
+        right: 0;
+        top: 50px;
+
+        li {
+          padding-left: 0.65em;
+          position: relative;
+        }
+
+        li a {
+          border-radius: 50%;
+          color: $white;
+          display: table;
+          position: relative;
+          transition: $bg-color-fast;
+          height: 32px;
+          width: 32px;
+          text-align: center;
+
+          span {
+            display: block;
+            position: relative;
+            text-indent: -9999px;
+          }
+
+          &:before {
+            display: table-cell;
+            font-size: 1.9rem;
+            text-indent: 0;
+            vertical-align: middle;
+            padding: 0;
+          }
+
+          &.bbva-twitter {
+            background-color: $color-twitter;
+            color: $white;
+          }
+
+          &.bbva-facebook {
+            background-color: $color-facebook;
+            color: $white;
+          }
+
+          &.bbva-googleplus {
+            background-color: $color-googleplus;
+            color: $white;
+          }
+
+          &.bbva-pinterest {
+            background-color: $color-pinterest;
+            color: $white;
+          }
+
+          &.bbva-linkedin {
+            background-color: $color-linkedin;
+            color: $white;
+          }
+
+          &.bbva-youtube {
+            background-color: $color-youtube;
+            color: $white;
+          }
+
+          &.bbva-coronita_link {
+            background-color: $blue-medium-wcag;
+            color: $white;
+          }
+
+          &:hover {
+            background-color: $grey500;
+          }
+        }
+    }
+
+    .large-numbers {
+      font-size: 4rem;
+    }
+
+    // ------------------------- //
+    // Sign In
+    // ------------------------- //
+        .sign-in-form .username-input {
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .sign-in-form input[type="text"] {
+            flex: 2 1 auto;
+            margin-bottom: 2rem;
+        }
+
+        .sign-in-form input[type="text"] + .btn {
+            margin: 0;
+            align-self: center;
+            padding: 1.9rem 2rem;
+            min-width: 40%;
+            max-width: 60%;
+            margin-bottom: 2rem;
+        }
+
+        .sign-in-form + p.pull-left,
+        .sign-in-form + p.pull-left+p.pull-right{
+            float:none!important;
+        }
+
+    // ------------------------- //
+    // Sign Off
+    // ------------------------- //
+
+        .sign-off [class*="col"]:first-child .lg-content,
+        .sign-off [class*="col"]:first-child .lg-img{
+
+            flex-basis:auto;
+
+        }
+
+        .sign-off [class*="col"]:first-child .lg-content{
+            text-align: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .sign-off [class*="col"]:first-child .lg-img{
+            margin-bottom: 6rem;
+            align-items: center;
+        }
+
+        .sign-off [class*="col"]:first-child div{
+            flex-direction: column-reverse;
+        }
+
+        // ------------------------- //
+        // Sticky Header
+        // ------------------------- //
+
+        /* Sticky header */
+
+        .feedify {
+          .feedify-item {
+            .feedify-item-header {
+              .header-left {
+                font-size: 12px;
+                display: none;
+              }
+              .icon-container {
+                display: none;
+              }
+              .header-right {
+                .icon {
+                  font-size:1.3em;
+                  padding-right:12px;
+                }
+                /*.btn {
+                  font-size: 12px;
+                  padding: 2rem 2rem;
+                }*/
+                .hidden-icons {
+                  display: block;
+                  font-size: 2rem;
+                  margin-top: 20px;
+                  .icon-link {
+                    margin-left: 0;
+                  }
+                }
+              }
+              .hidden-icons {
+                display: block !important;
+                margin-top: 2rem;
+                .icon-link {
+                  font-size: 2.5rem;
+                  margin-left: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        // ------------------------- //
+        // Vertical Tabs
+        // ------------------------- //
+
+        .vertical-tabs .tab-content {
+            float: left;
+            width: 100%;
+            padding-left: 0;
+
+        }
+
+
+        .vertical-tabs .tab-content a{
+            position: relative;
+            display: table;
+            width: 100%;
+            color: $grey600;
+            padding: 3rem 0 3rem 0;
+            border-bottom:  1px solid $grey200;
+            padding-right: 2rem;
+
+            &:active{
+               border-bottom: 1px solid transparent;
+            }
+
+            &:focus{
+               border-bottom: 1px solid transparent;
+            }
+        }
+
+
+
+        .vertical-tabs .tab-content a > span:first-child{
+            margin-right:1rem;
+            display: table-cell;
+            width: 3rem;
+        }
+
+
+        .vertical-tabs .tab-content a.active {
+            border-bottom:  1px solid transparent;
+            color:#6A7A90;
+            &:active{
+               border-bottom:  1px solid transparent;
+            }
+            &:focus{
+               border-bottom:  1px solid transparent;
+            }
+        }
+
+        .vertical-tabs .tab-content .tab-pane {
+            padding-top: 0;
+        }
+
+
+        /*handles the minus plus switch*/
+        .vertical-tabs .panel-heading a span:nth-of-type(2),
+        .vertical-tabs .panel-heading a span:nth-of-type(3) {
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .vertical-tabs a .bbva-coronita_minus-stag,
+        .vertical-tabs a .bbva-coronita_plus-stag {
+            color: #1973b8;
+            font-size: 1em;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .vertical-tabs a .bbva-coronita_plus-stag {
+            display: inline-block;
+        }
+
+        .vertical-tabs .active .bbva-coronita_minus-stag {
+            display: inline-block;
+        }
+
+        .vertical-tabs .active .bbva-coronita_plus-stag {
+            display: none;
+        }
+
+        .responsive-tabs-container.accordion-xs .nav-tabs {
+            display: none;
+        }
+
+
+        // ------------------------- //
+        // Promo Banner
+        // ------------------------- //
+
+        .promo-banner{
+            flex-direction: column;
+            max-height:100%;
+
+            .promo-content{
+                order:2;
+                text-align: center;
+                width: 100%;
+                padding-top: 3rem;
+            }
+
+            .promo-img{
+                order:1;
+                -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+                clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+                    height: 30rem;
+                max-height: 30rem;
+                width: 100%;
+            }
+        }
+    
+    
+       
+    
+
+
+        // ------------------------- //
+        // Search Results
+        // ------------------------- //
+
+        .cq-searchpromote-results .cq-searchpromote-result-item .description{
+		  width: 100%;
+        }
+
+
+
+
+} // end max-width: 48em
+
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 768px / 48em PORTRAIT
+// ---------------------------------------------------------------------------------------------- //
+
+/* Portrait */
+@media only screen
+    and (min-device-width : 767px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait){
+
+        .vertical-tabs a .bbva-coronita_minus-stag,
+        .vertical-tabs .collapsed .bbva-coronita_minus-stag{
+            opacity: 0;
+            display:none;
+        }
+
+}
+
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 768px / 48em PORTRAIT
+// ---------------------------------------------------------------------------------------------- //
+
+
+
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 576px / 36em
+// ---------------------------------------------------------------------------------------------- //
+
+@media (max-width: 36em) { // 576px
+
+  // ------------------------- //
+  // Structural / Typography
+  // ------------------------- //
+
+  .hero-h1, .hero h1, h1.hero, .hero-h1 a, .hero h1 a, h1.hero a {
+    font-size: 4.7rem;
+  }
+
+  h1, .h1 {
+    font-size: 4rem;
+  }
+
+  h2, .h2 {
+    font-size: 2.8rem;
+    line-height: 1.25;
+  }
+
+  h3, .h3 {
+    font-size: 2.6rem;
+  }
+
+  h4, .h4 {
+    font-size: 2.4rem;
+  }
+
+  blockquote, blockquote.blockquote-aside {
+    margin: 2.5em 0;
+    padding: 2em;
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  .lead {
+    font-size: 1.8rem;
+  }
+
+  .page-header {
+    margin: 1.5em 0 0.75em;
+  }
+
+  // ------------------------- //
+  // Header
+  // ------------------------- //
+
+  /* Commercial Sign-In */
+  #header-sign-in-mobile .sign-in-commercial {
+    .sign-in-bg {
+      height: 310px;
+    }
+
+    .sign-in-form {
+      &> div {
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Modals
+  // ------------------------- //
+
+  /* Alert Modal */
+
+  .modal-dialog {
+    max-width: 88%;
+  }
+
+  .modal-content .modal-body {
+    padding: 5rem 5rem 1.5rem;
+  }
+
+  .modal-content .modal-close {
+    margin: 1.5rem 1rem 0 0;
+  }
+
+  /* Video Modal */
+
+  .modal-video {
+    .modal-content .modal-body {
+      padding: 0;
+    }
+  }
+
+  // ------------------------- //
+  // Hero
+  // ------------------------- //
+
+  // Primary
+  .hero-main {
+    .hero-text {
+      margin-bottom: 2.25em;
+      width: 100%;
+
+      .btn {
+        margin-bottom: 1.75em;
+      }
+
+      .icon-link, a:not(.btn) {
+        margin-right: 1em;
+        margin-left: 1em;
+      }
+    }
+  }
+
+  // Secondary, Default
+  .hero-secondary .hero-text {
+    margin-bottom: 0;
+
+    .hero-cta .btn {
+      @include btn();
+    }
+  }
+
+  // Secondary, Showcase
+  .hero-showcase .hero-text {
+    font-size: 0.85em;
+  }
+
+  // ------------------------- //
+  // Features & Benefits
+  // ------------------------- //
+
+  .features-benefits {
+
+    .carousel-indicators {
+
+      li {
+        font-size: 1.4rem;
+
+        .icon {
+          font-size: 2.3rem;
+        }
+      }
+    }
+
+    .carousel-arrows li a {
+      font-size: 1.4rem;
+    }
+  }
+
+  .features-benefits-slide {
+    min-height: 450px;
+
+    .container {
+
+      &> div {
+
+        &> div {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Cards
+  // ------------------------- //
+
+  /* Cards - Image "Break" Layout */
+
+  .bbva-cards .card-block {
+    .card-img-break {
+        img {
+            max-height: 140px;
+            max-width: 90%;
+        }
+      }
+    }
+
+
+  // ------------------------- //
+  // Call Outs - Vertical
+  // ------------------------- //
+
+    .call-out {
+        display: flex;
+        flex-flow: column wrap;
+
+        // .media-body,
+        // .media-left,
+        // .media-right{
+        //     flex-basis: inherit;
+        // }
+
+        .call-out-icon {
+            top: 0;
+            padding-right: 0;
+            margin-bottom: 2rem;
+        }
+        .media-body{
+            width:100%;
+            display: block;
+        }
+    }
+
+    // ------------------------- //
+        // *Horizontal Badges (experimental)*/
+    // ------------------------- //
+
+    .badge-container.horizontal{
+        flex-flow: row wrap;
+    }
+
+    .badge-container.horizontal .badge{
+            margin: 0 0 1.6rem 0;
+    }
+
+    .parallaxParent {
+      height: 38vh;
+    }
+
+    // ------------------------- //
+    // Image Header
+    // ------------------------- //
+
+    /*Product Header*/
+    .image-header.product-header{
+        min-height: 250px;
+        margin-bottom: 25%;
+
+        .card-img {
+            margin-top: -6rem;
+            max-width:40vw;
+        }
+
+        h1.hero{
+            font-size:6vw;
+        }
+    }
+
+    // ------------------------- //
+        //sticky-header
+    // ------------------------- //
+
+    .feedify-item-header {
+      .header-left {
+        display: none;
+      }
+    }
+    
+    
+    // ------------------------- //
+        //slant
+    // ------------------------- //
+
+    .slant {
+        -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+    }
+
+  
+  // ------------------------- //
+  // Sitemap Page
+  // ------------------------- //
+  .sitemap {
+
+    h2 {
+      padding-bottom: 0.6em;
+      padding-top: 0.6em;
+    }
+
+    .sitemap-section {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-gap: 0;
+      -moz-column-gap: 0;
+      column-gap: 0;
+
+      .sitemap-col {
+        display: inline-block;
+        padding-bottom: 0.5em;
+      }
+    }
+
+  }
+
+} // end max-width: 36em
+
+// ---------------------------------------------------------------------------------------------- //
+// Max-Width 480px / 30em
+// ---------------------------------------------------------------------------------------------- //
+
+@media (max-width: 30em) { // 480px
+
+  // ------------------------- //
+  // Structural / Typography
+  // ------------------------- //
+
+  h2, .h2 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+
+  h3, .h3 {
+    font-size: 2.2rem;
+  }
+
+  h4, .h4 {
+    font-size: 2rem;
+  }
+
+  // ------------------------- //
+  // Forms
+  // ------------------------- //
+
+  form input, form textarea, .form-group-bbva input[type="text"], .form-group-bbva textarea, .form-group-bbva select, form .form-group-bbva .select2 .select2-selection {
+    padding: 1.75rem 1.25rem;
+  }
+
+  // ------------------------- //
+  // Tables
+  // ------------------------- //
+
+  /* Pew Disclosure Table
+  table.pew td, table.pew td:first-child {
+    font-size: 1.3rem;
+    padding: 1.2rem 1%;
+  }
+
+  table.pew .pew-fee {
+    width: 3%;
+  }*/
+
+    /*Responsive Tables*/
+    table {
+      border-bottom: 3px solid $grey200;
+      border-top: 3px solid $grey200;
+
+      &.table-core-blue{
+        border-top: 3px solid $blue-core;
+      }
+
+      &.table-light-blue{
+        border-top: 3px solid $blue-light;
+      }
+
+      thead {
+          display: none;
+      }
+
+      tr {
+        padding: 1rem 0;
+        display: block;
+
+        &:nth-of-type(2n) {
+          background-color: inherit;
+        }
+      }
+
+      td {
+        // padding: 1rem;
+        padding: 1rem 0;
+        display: block;
+        border:none;
+
+        &:first-child {
+          font-family: $sans-serif-bold;
+          font-size:2rem;
+        }
+
+        &:before {
+          content: attr(data-th);
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 700;
+          font-family: $serif-italic;
+        }
+
+        p:last-child{
+          margin-bottom:0;
+        }
+      }
+    }
+
+    /*Pew Disclosure*/
+    table.pew {
+        width:100%;
+        border: 1px solid $grey200;
+
+        tr{
+            border:none;
+            padding-top: 0;
+
+            td{
+                font-size: 1.6rem;
+                font-family: $sans-serif;
+            }
+        }
+    }
+
+    table.pew tr td:empty{
+        display:none;
+    }
+
+
+    table.pew .pew-title.visible-xs,
+    table.pew th.visible-xs {
+        text-align: left;
+    }
+
+
+
+    table.pew td.pew-description{
+        font-family: $sans-serif-medium;
+        font-weight: 700;
+        text-align: left;
+        font-size: 2rem;
+        color:#121212;
+        border-top:1px solid $grey200;
+
+    }
+
+
+    table.pew tr:nth-of-type(2) td.pew-description{
+        border-top:none;
+    }
+
+    table.pew td.pew-fee {
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: $sans-serif;
+        font-weight: 400;
+        text-align: left;
+        background:none;
+    }
+
+    table.pew .pew-fee + td{
+        font-size: 1.6rem;
+    }
+
+    table.pew tr:last-child {
+        border-bottom: none;
+    }
+
+    table.pew.pew-three-col td:not(.pew-title) {
+        width: 100%;
+    }
+
+
+  // ------------------------- //
+  // Buttons
+  // ------------------------- //
+
+  .btn {
+    padding: 1.9rem 10%;
+    width: 100%;
+  }
+
+  // ------------------------- //
+  // Header
+  // ------------------------- //
+
+  body > header.container-fluid #logo-mobile img {
+    width: 155px;
+    height: 21px;
+  }
+
+  body > header.container-fluid .maintenance-notice-toggle {
+
+    span {
+      padding-right: 0.7em;
+    }
+  }
+
+  #header-sign-in-mobile {
+    padding: 0 0.5em;
+
+    .sign-in-form {
+      h2 {
+        font-size: 1.65em;
+        padding-right: 0;
+      }
+
+      input[type="text"] {
+        max-width: 60%;
+        padding: 0.75em 0.4em 0.75em 2.7em;
+      }
+
+      #submit-olb {
+        max-width: 33%;
+        padding: 1rem 1.4rem;
+      }
+    }
+  }
+
+  // ------------------------- //
+  // Footer - Basic
+  // ------------------------- //
+
+  footer .tagline-container {
+    flex-wrap: wrap;
+    margin: 0 0 1.5em;
+  }
+
+  footer .tagline {
+    border-left: none;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer nav > ul {
+    flex-wrap: wrap;
+  }
+
+  footer nav > ul li {
+    border-left: none;
+    padding: 0.4em 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  // ------------------------- //
+  // Hero
+  // ------------------------- //
+
+  // Primary
+  .hero-main {
+    padding: 0;
+
+    // ------------ //
+    // Have to override Bootstrap margin & padding to get a "full-bleed" on XS size
+    &> .container > .row {
+      margin: 0;
+
+      &> div {
+        padding: 0;
+      }
+    }
+    // ------------ //
+
+    .container {
+      padding: 0;
+    }
+
+    .hero-text {
+      margin: 0;
+      padding: 3.5em 3.5em 1.25em;
+      text-align: center;
+      width: 100%;
+
+      p.hero-cta {
+        justify-content: center;
+        padding-bottom: 0.5em;
+      }
+
+      .btn {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // Secondary, Showcase
+  .hero-showcase {
+    padding: 2.5em 0 3em;
+  }
+
+  // ------------------------- //
+  // Image Header
+  // ------------------------- //
+
+  .image-header {
+    height: 155px;
+    margin-bottom: 3.25em;
+
+    h1.hero {
+      font-size: 3.2rem;
+    }
+
+    &.image-header-short {
+      height: 120px;
+    }
+  }
+
+  // ------------------------- //
+  // Features & Benefits
+  // ------------------------- //
+
+  .features-benefits {
+
+    .carousel-indicators {
+
+      li {
+        font-size: 1.3rem;
+
+        .icon {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    .carousel-arrows li a span {
+      &.icon {
+        font-size: 2.2rem;
+      }
+
+      &:not(.icon) {
+        display: none;
+      }
+    }
+  }
+
+  .features-benefits-slide {
+    min-height: 365px;
+  }
+
+  // ------------------------- //
+  // Modals
+  // ------------------------- //
+
+  /* City - State Selector Modal */
+  .chooseRegion {
+    text-align: center;
+
+    .btn[type=submit] {
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
+
+    .icon-link {
+      display: block;
+      margin: 0 0 1em;
+      position: relative;
+    }
+  }
+
+  // ------------------------- //
+  // Blog (Money Fit)
+  // ------------------------- //
+
+  /* Blog Article */
+  .container-fluid.blog-article-block .blog-author-block {
+    display: block;
+  }
+
+  .container-fluid.blog-article-block .blog-author {
+    margin: 0 auto 1em;
+  }
+
+  .container-fluid.blog-article-block .blog-social-share {
+    display: table;
+    margin: 0 auto;
+
+    li:first-child {
+      padding-left: 0;
+    }
+  }
+
+  // ------------------------- //
+  // CTA Aside
+  // ------------------------- //
+
+  .cta-aside {
+      padding: 3.125em 10% 2em;
+  }
+
+  // ------------------------- //
+  // Sticky Header
+  // ------------------------- //
+
+  /* Sticky Header Page */
+
+  .feedify-item {
+    .feedify-item-header {
+      .btn {
+        width: auto;
+        padding: 1em 2em;
+      }
+    }
+  }
+
+
+} // end max-width: 30em

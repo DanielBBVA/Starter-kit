@@ -1,0 +1,110 @@
+// TYPOGRAPHY
+
+@font-face {
+  font-family: 'Tiempos Headline Regular';
+  src: url('../../fonts/tiempos-headline-regular.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/tiempos-headline-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/tiempos-headline-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/tiempos-headline-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/tiempos-headline-regular.svg#32a5c18fbd7f2e5bfaa36a702c99a245') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline Medium';
+  src: url('../../fonts/tiempos-headline-medium-italic.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/tiempos-headline-medium-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/tiempos-headline-medium-italic.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/tiempos-headline-medium-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/tiempos-headline-medium-italic.svg#46e3b136ca8d9efef8ca6a17668f3763') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
+/*@font-face {
+  font-family: 'Benton Sans Black';
+  src: url('../../fonts/BentonSans-Black.eot');
+  src: url('../../fonts/BentonSans-Black.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/BentonSans-Black.woff') format('woff'),
+       url('../../fonts/BentonSans-Black.ttf')  format('truetype'),
+       url('../../fonts/BentonSans-Black.svg#7d25ed65329d1331bf4549a4ec3951b2') format('svg');
+       
+  font-style:   normal;
+  font-weight:  400;
+}*/
+
+@font-face {
+  font-family: 'BentonSansBBVA Bold';
+  src: url('../../fonts/BentonSansBBVA-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/BentonSansBBVA-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BentonSansBBVA-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/BentonSansBBVA-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BentonSansBBVA-Bold.svg#ed8435d366a4ac4bee8ecd80fc76b4b5') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVA Book';
+  src: url('../../fonts/BentonSansBBVA-Book.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/BentonSansBBVA-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BentonSansBBVA-Book.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/BentonSansBBVA-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BentonSansBBVA-Book.svg#ace0ed135dbc9c8610ca3f0bf5ce3b98') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVA Light';
+  src: url('../../fonts/BentonSansBBVA-Light.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/BentonSansBBVA-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BentonSansBBVA-Light.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/BentonSansBBVA-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BentonSansBBVA-Light.svg#f78597f6497138650c310eebac22df9c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVA Medium';
+  src: url('../../fonts/BentonSansBBVA-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/BentonSansBBVA-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BentonSansBBVA-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/BentonSansBBVA-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BentonSansBBVA-Medium.svg#a8060284b02b2442ada7a339eccbdbe3') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Benton Sans Regular';
+  src: url('../../fonts/BentonSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/BentonSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BentonSans-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/BentonSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BentonSans-Regular.svg#f50175ba80b800aed21afcc63f3304ef') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Benton Sans Thin';
+  src: url('../../fonts/BentonSans-Thin.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/BentonSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BentonSans-Thin.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/BentonSans-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BentonSans-Thin.svg#68f7b38655a077d00ecf5d03d0d23165') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+

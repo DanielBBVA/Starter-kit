@@ -1,0 +1,227 @@
+
+
+/* Margins */
+
+span.nomargin, span.xsmargin, span.smallmargin, span.mediummargin, span.largemargin {
+  display: block;
+}
+
+.nomargin {  				
+	margin-bottom: 0; 
+}
+
+.xsmargin { 			 	
+	margin-bottom: 0.5em; 
+}
+
+.smallmargin { 			 	
+	margin-bottom: 1em; 
+}
+
+.mediummargin { 			
+	margin-bottom: 1.875em;
+}
+
+.largemargin { 				
+	margin-bottom: 2.5em; 
+}
+
+/* Padding */
+
+span.nopadding, span.xspadding, span.smallpadding, span.mediumpadding, span.largepadding {
+  display: block;
+}
+
+.nopadding {  				
+	padding-bottom:0; 
+}
+
+.smallpadding { 			 	
+	padding-bottom: 1em; 
+}
+
+.mediumpadding { 			
+	padding-bottom: 1.875em;
+}
+
+.largepadding { 				
+	padding-bottom: 2.5em; 
+}
+
+/* Typography */
+
+// Font Families
+.serif {
+  font-family: $serif;
+}
+
+.sans-serif {
+  font-family: $sans-serif;
+}
+
+.sans-serif-light {
+  font-family: $sans-serif-light;
+}
+
+.sans-serif-regular {
+  font-family: $sans-serif-regular;
+}
+
+.sans-serif-medium {
+  font-family: $sans-serif-medium;
+}
+
+.sans-serif-bold {
+  font-family: $sans-serif-bold;
+}
+
+// .sans-serif-black {
+//   font-family: $sans-serif-black;
+// }
+
+.font-light{				
+	font-family: $sans-serif-light;
+}
+
+.font-book{					
+	font-family: $sans-serif;
+}
+
+.text-indent {
+  margin-left: 1.5em;
+}
+
+.large {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.faux-link {
+	color: $blue-medium-wcag;
+	font-family: $sans-serif-medium;
+    transition: $color-fast;
+}
+
+/* Icon Sizes */
+.icon-xs,
+a.icon-link .icon-xs,
+a.icon-link:hover .icon-xs{
+	font-size: 1.1rem;
+}
+
+.icon-sm,
+a.icon-link .icon-sm,
+a.icon-link:hover .icon-sm{
+	font-size: 2.4rem;
+}
+
+.icon-md,
+a.icon-link .icon-md,
+a.icon-link:hover .icon-md{
+	font-size: 3rem;
+}
+
+.icon-lg,
+a.icon-link .icon-lg,
+a.icon-link:hover .icon-lg{
+	font-size: 4.5rem;
+}
+
+.icon-xl,
+a.icon-link .icon-xl,
+a.icon-link:hover .icon-xl{
+	font-size: 7rem;
+}
+
+/* Icon Rotation */
+.rotate90:before {
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rotateNeg90:before {
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.rotate180:before {
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* Buttons */
+
+.btn-center{				
+	margin: 0 auto!important; 
+	display: table;
+}	
+
+/* Images */
+.img-round {
+   max-width: 265px;
+   border-radius: 50%;
+}
+
+img, .img-responsive {
+	max-width: 100%;
+}
+
+/* Shadow */
+
+.elliptical-shadow {
+  margin: 1em auto 3em;
+  width: 80%;
+  height: 1px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.elliptical-shadow:after {
+  content: '\0000a0';
+  position: absolute;
+  bottom: -1em;
+  left: 20%;
+  width: 60%;
+  height: 16px;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+/* White Background Elements */
+
+.container-fluid .bg-white {
+  margin-bottom: 2em;
+  padding: 1.125em 2em;
+  width: 100%;
+}
+
+/* Page Headers - Text Heading only */
+/* Bootstrap Override */
+.page-header {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-bottom: none;
+}

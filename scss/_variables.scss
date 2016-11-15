@@ -1,0 +1,132 @@
+// Primary Colors
+$navy: 				#072146;	// BBVA Navy
+$blue-core: 		#004481;	// BBVA Core Blue
+$blue-medium: 		#2a86ca;	// BBVA Medium Blue
+$blue-medium-wcag: 	#1973b8;	// BBVA Medium Blue, Slightly Darkened for WCAG AA Compliance on Color BG's (grey100, blue white light)
+$blue-light: 		#5bbeff;	// BBVA Light Blue
+
+// Secondary Colors
+$aqua: 			#0fb1b2;
+$aqua-wcag:		#02a5a5;	// BBVA Aqua, Slightly Darkened for WCAG AA Compliance
+$aqua-white:	#cfeff0;
+$aqua-light:	#63cccd;
+$aqua-dark:		#0b8585;
+
+$grey600:		#121212;	// BBVA 600
+$grey500:		#666666;	// BBVA 500
+$grey400:		#bdbdbd;	// BBVA 400
+$grey300:		#d3d3d3;	// BBVA 300
+$grey200:		#e9e9e9;	// BBVA 200
+$grey100:		#f4f4f4;	// BBVA 100
+$white: 		#fff;
+
+// Tertiary Colors
+$red:			#da3851;
+$red-white:		#f4c3ca;
+$red-light:		#e77d8e;
+$red-dark:		#a32a3d;
+
+$orange:		#f7893b;
+$orange-white:	#fddbc4;
+$orange-light:	#fab27f;
+$orange-dark:	#b9672c;
+
+$yellow:		#f8cd51;
+$yellow-white:	#fdf0ca;
+$yellow-light:	#fade8e;
+$yellow-dark:	#ba9a3d;
+
+$gold:			#d8be75;
+$gold-white:	#f3ebd5;
+$gold-light:	#e6d5a5;
+$gold-dark:		#a28e58;
+
+$green:			#48ae64;
+$green-white:	#c8e7d0;
+$green-light:	#88ca9a;
+$green-dark:	#36824b;
+
+$pink:			#f78be8;
+$pink-white:	#fddcf8;
+$pink-light:	#fab3f0;
+$pink-dark:		#b968ae;
+
+$purple:		#8f7ae5;
+$purple-white:	#ddd7f7;
+$purple-light:	#b6a8ee;
+$purple-dark:	#6b5bac;
+
+
+// Special Colors
+$black: #000;
+
+$overlay:			rgba(6, 32, 69, 0.25);
+
+$blue-white:		#aacee7;	// "White Blue," non-standard color
+$blue-white-light:	#eef8ff;	// "White Blue," non-standard color, Much Lighter
+
+$btn-yellow:		#e5b52a;
+$btn-yellow-dark:	#b68c11;
+$btn-orange-dark:	#c4580a;
+$btn-salmon:		#f15a5f;	// Performance testing button color
+
+$blue-white:		lighten($blue-light, 18%);	// "White Blue," non-standard color
+$blue-white-light:	lighten($blue-light, 28%);	// "White Blue," non-standard color, Much Lighter
+
+
+$menu-border: transparentize($grey300, .70); // Mobile Menu style color for borders
+
+// Social Colors
+$color-facebook: #3b5998;
+$color-twitter: #00aced;
+$color-instagram: #675144;
+$color-linkedin: #517fa4;
+$color-googleplus: #dd4b39;
+$color-pinterest: #f15a5f;
+$color-youtube: #bb0000;
+
+// ---------------------------------------------------- //
+
+// $danger: #d9534f;
+// $warning: #f0ad4e;
+// $success: #5cb85c;
+// $info: #337ab7;
+
+// // Colors Light
+// /*$blue1-light: transparentize($blue1, .75);*/
+
+// // Colors Dark
+// /*$magenta-dark: darken($magenta, 3%);*/
+
+// ---------------------------------------------------- //
+
+// Animations
+$all-fast:				all 100ms linear 0s;
+$bg-color-fast:			background-color 100ms linear 0s;
+$color-fast:			color 100ms linear 0s;
+$opacity-fast:			opacity 100ms linear 0s;
+
+// ---------------------------------------------------- //
+
+// Shadows
+$box-shadow:			0 1px 1px 0 $grey300;
+$box-shadow-large:		0 2px 3px 0 $grey300;
+$inset-shadow:			inset 0 1px 0 0 #ececec;
+
+// ---------------------------------------------------- //
+
+// Fonts
+$serif: 				'Tiempos Headline Regular', Georgia, Times, serif;
+$serif-italic: 			'Tiempos Headline Medium', Georgia, Times, serif;
+$sans-serif: 			'BentonSansBBVA Book', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$sans-serif-regular: 	'Benton Sans Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$sans-serif-light: 		'BentonSansBBVA Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$sans-serif-medium: 	'BentonSansBBVA Medium', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$sans-serif-bold: 		'BentonSansBBVA Bold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+// $sans-serif-black: 		'Benton Sans Black', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+// ---------------------------------------------------- //
+
+// Font Icons
+// Content controlled by our IcoMoon account
+// Variables are in _icomoon-variables.scss

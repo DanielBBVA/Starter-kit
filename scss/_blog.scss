@@ -1,0 +1,261 @@
+
+
+/* Blog Pages */
+
+/* Blog Article Page */
+.image-header.image-header-blog {
+	margin-bottom: 0;
+}
+
+.container-fluid.blog-article-block {
+	border-bottom: 1px solid $grey200;
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+	.blog-author-block {
+		display: table;
+		width: 100%;
+
+		.img-round {
+			height: 54px;
+			width: 54px;
+		}
+
+		.byline {
+			padding-left: 1em;
+			width: auto;
+
+			span a {
+				color: $grey600;
+				font-family: $sans-serif-medium;
+				font-size: 1.3rem;
+				text-transform: uppercase;
+			}
+
+			a {
+				font-size: 1.5rem;
+				padding: 0;
+			}
+		}
+	}
+
+	.blog-author {
+		display: table;
+	}
+
+	.blog-author > * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.blog-social-share {
+		display: table-cell;
+		margin: 0;
+		width: 25%;
+		vertical-align: middle;
+
+		li {
+			display: table-cell;
+			padding-bottom: 0;
+			padding-left: 0.5em;
+			vertical-align: middle;
+
+			&:before {
+				content: '';
+			}
+
+			a {
+				background-color: $grey300;
+				border-radius: 50%;
+				border-bottom: none;
+				color: $white;
+				display: table;
+				height: 38px;
+				padding-bottom: 0;
+				position: relative;
+				transition: $bg-color-fast;
+				width: 38px;
+
+				&:hover, &:focus, &:active {
+					border-bottom: none;
+					
+					&[data-type="twitter"] {
+						background-color: $color-twitter;
+					}
+
+					&[data-type="facebook"] {
+						background-color: $color-facebook;
+					}
+
+					&[data-type="googleplus"] {
+						background-color: $color-googleplus;
+					}
+
+					&[data-type="pinterest"] {
+						background-color: $color-pinterest;
+					}
+
+					&[data-type="linkedin"] {
+						background-color: $color-linkedin;
+					}
+				}
+
+				span {
+					display: block;
+					position: relative;
+					text-indent: -9999px;
+
+					&.icon {
+						display: table-cell;
+						text-align: center;
+						text-indent: 0;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+}
+
+.blog-date {
+	color: $grey500;
+	font-family: $sans-serif;
+	font-size: 1.3rem;
+}
+
+/* Blog Author Page */
+
+.image-header-blog {
+	h2 {
+		color: $white;
+		font-family: $serif-italic;
+		font-style: italic;
+		letter-spacing: 0;
+		line-height: 1.4;
+		padding: 0 15%;
+		text-align: center;
+	}
+}
+
+.blog-author-page {
+	margin-top: -95px;
+	padding-top: 0;
+	position: relative;
+
+	.img-round {
+		display: block;
+		height: 144px;
+		margin-bottom: 1em;
+		position: relative;
+		width: 144px;
+	}
+
+	h1 {
+		margin-bottom: 1em;
+	}
+
+	.blog-author-social {
+		display: table;
+
+		li {
+			display: table-cell;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:before {
+				content: '';
+			}
+
+			a {
+				font-family: $sans-serif-medium !important;
+
+				span {
+					display: block;
+				    max-width: 200px;
+				    overflow: hidden;
+				    position: relative;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    width: 100%;
+				}
+
+				&:before {
+					display: block;
+					font-family: 'coronita' !important;
+					font-size: 2.2rem;
+    				padding-bottom: 0.25em;
+    				position: relative;
+    				width: 100%;
+				}
+
+				&.bbva-twitter {
+					color: $color-twitter;
+
+					&:hover, &:focus, &:active {
+						border-color: $grey600;
+					}
+				}
+
+				&.bbva-facebook {
+					color: $color-facebook;
+
+					&:hover, &:focus, &:active {
+						border-color: $color-facebook;
+					}
+				}
+
+				&.bbva-googleplus {
+					color: $color-googleplus;
+
+					&:hover, &:focus, &:active {
+						border-color: $color-googleplus;
+					}
+				}
+
+				&.bbva-pinterest {
+					color: $color-pinterest;
+
+					&:hover, &:focus, &:active {
+						border-color: $color-pinterest;
+					}
+				}
+
+				&.bbva-linkedin {
+					color: $color-linkedin;
+
+					&:hover, &:focus, &:active {
+						border-color: $color-linkedin;
+					}
+				}
+
+				&.bbva-youtube {
+					color: $color-youtube;
+
+					&:hover, &:focus, &:active {
+						border-color: $color-youtube;
+					}
+				}
+			}
+		}
+	}
+
+	.blog-author-info {
+		padding-right: 10%;
+	}
+}
+
+.blog-counter {
+	color: $grey500;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.large-numbers {
+	display: block;
+	font-size: 4.3rem;
+	line-height: 1;
+	position: relative;
+	width: 100%;
+}

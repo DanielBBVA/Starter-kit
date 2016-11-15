@@ -1,0 +1,229 @@
+@import "variables";
+
+@font-face {
+  font-family: 'bbva-sn-icons';
+  src:  url('#{$icomoon-font-path}/bbva-sn-icons.eot');
+  src:  url('#{$icomoon-font-path}/bbva-sn-icons.eot') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/bbva-sn-icons.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/bbva-sn-icons.woff') format('woff'),
+    url('#{$icomoon-font-path}/bbva-sn-icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-sn"], [class*=" ico-sn"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-sn-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-sn_add {
+  &:before {
+    content: $ico-sn_add;
+  }
+}
+.ico-sn_back {
+  &:before {
+    content: $ico-sn_back;
+  }
+}
+.ico-sn_bbvaofice {
+  &:before {
+    content: $ico-sn_bbvaofice;
+  }
+}
+.ico-sn_block {
+  &:before {
+    content: $ico-sn_block;
+  }
+}
+.ico-sn_checkmark {
+  &:before {
+    content: $ico-sn_checkmark;
+  }
+}
+.ico-sn_close {
+  &:before {
+    content: $ico-sn_close;
+  }
+}
+.ico-sn_continue {
+  &:before {
+    content: $ico-sn_continue;
+  }
+}
+.ico-sn_contract {
+  &:before {
+    content: $ico-sn_contract;
+  }
+}
+.ico-sn_correct {
+  &:before {
+    content: $ico-sn_correct;
+  }
+}
+.ico-sn_correctlocation {
+  &:before {
+    content: $ico-sn_correctlocation;
+  }
+}
+.ico-sn_error {
+  &:before {
+    content: $ico-sn_error;
+  }
+}
+.ico-sn_expand {
+  &:before {
+    content: $ico-sn_expand;
+  }
+}
+.ico-sn_exploration {
+  &:before {
+    content: $ico-sn_exploration;
+  }
+}
+.ico-sn_fingerprint {
+  &:before {
+    content: $ico-sn_fingerprint;
+  }
+}
+.ico-sn_fold {
+  &:before {
+    content: $ico-sn_fold;
+  }
+}
+.ico-sn_forward {
+  &:before {
+    content: $ico-sn_forward;
+  }
+}
+.ico-sn_fraud {
+  &:before {
+    content: $ico-sn_fraud;
+  }
+}
+.ico-sn_getout {
+  &:before {
+    content: $ico-sn_getout;
+  }
+}
+.ico-sn_hide {
+  &:before {
+    content: $ico-sn_hide;
+  }
+}
+.ico-sn_link {
+  &:before {
+    content: $ico-sn_link;
+  }
+}
+.ico-sn_lock {
+  &:before {
+    content: $ico-sn_lock;
+  }
+}
+.ico-sn_mapa {
+  &:before {
+    content: $ico-sn_mapa;
+  }
+}
+.ico-sn_menu {
+  &:before {
+    content: $ico-sn_menu;
+  }
+}
+.ico-sn_more {
+  &:before {
+    content: $ico-sn_more;
+  }
+}
+.ico-sn_mylocation {
+  &:before {
+    content: $ico-sn_mylocation;
+  }
+}
+.ico-sn_navigation {
+  &:before {
+    content: $ico-sn_navigation;
+  }
+}
+.ico-sn_nearme {
+  &:before {
+    content: $ico-sn_nearme;
+  }
+}
+.ico-sn_on {
+  &:before {
+    content: $ico-sn_on;
+  }
+}
+.ico-sn_phishing {
+  &:before {
+    content: $ico-sn_phishing;
+  }
+}
+.ico-sn_place {
+  &:before {
+    content: $ico-sn_place;
+  }
+}
+.ico-sn_return_icon-12 {
+  &:before {
+    content: $ico-sn_return_icon-12;
+  }
+}
+.ico-sn_return_icon-15 {
+  &:before {
+    content: $ico-sn_return_icon-15;
+  }
+}
+.ico-sn_seachinglocation {
+  &:before {
+    content: $ico-sn_seachinglocation;
+  }
+}
+.ico-sn_security {
+  &:before {
+    content: $ico-sn_security;
+  }
+}
+.ico-sn_substract {
+  &:before {
+    content: $ico-sn_substract;
+  }
+}
+.ico-sn_unfold {
+  &:before {
+    content: $ico-sn_unfold;
+  }
+}
+.ico-sn_unlock {
+  &:before {
+    content: $ico-sn_unlock;
+  }
+}
+.ico-sn_visualize {
+  &:before {
+    content: $ico-sn_visualize;
+  }
+}
+.ico-sn_walkingdirections {
+  &:before {
+    content: $ico-sn_walkingdirections;
+  }
+}
+.ico-sn_withoutlocation {
+  &:before {
+    content: $ico-sn_withoutlocation;
+  }
+}
+

@@ -1,0 +1,81 @@
+
+
+/*  Sign off Ads 
+    Katherine loves comments
+*/
+
+.sign-off{
+    display: -webkit-box;  
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    
+    [class*="col"]{
+        display: -webkit-box;  
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-flex: 2 1 auto;               
+        -webkit-flex: 2 1 auto;       
+         -ms-flex: 2 1 auto;           
+        flex: 2 1 auto;
+        
+
+        &:first-child div{
+            padding: 7.3rem 4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        &:first-child .lg-content,
+        &:first-child .lg-img{
+            display: -webkit-box;  
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -webkit-box-flex-direction: column;
+            flex-direction: column;
+            padding: 0;
+            align-items: flex-start;
+        }
+        
+        &:first-child .lg-content{
+            margin-right: 3rem;
+            flex-basis: 60%;
+        }
+        
+        &:first-child .lg-img{
+            flex-basis: 40%;
+        }
+        
+        &:last-child{
+            -webkit-flex-direction: column;
+            -webkit-box-flex-direction: column;
+            flex-direction: column;
+        }
+        
+        &:last-child .sm-content{
+            padding: 3rem;
+            -webkit-box-flex: 2 1 auto;               
+            -webkit-flex: 2 1 auto;       
+             -ms-flex: 2 1 auto;           
+            flex: 2 1 auto;
+            -webkit-flex-direction: column;
+            -webkit-box-flex-direction: column;
+            flex-direction: column;
+            
+            &:first-child{
+                background-color: rgba( $blue-light, 0.1);
+                margin-bottom: 3rem;
+            }
+            
+            &:last-child{
+                background:$grey100;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,116 @@
+
+
+/* Buttons */
+// Basic button attributes are in _mixins.scss 
+
+.btn {
+  @include btn();
+  background-color: $blue-medium-wcag;
+
+  &:hover, &:focus, &:active, &.active {
+    background-color: $navy;
+    border-bottom: none !important;
+    color: $white !important;
+  }
+
+  &:last-of-type { 
+    margin-right: 0; 
+  }
+}
+
+.btn-lg {
+  @include btn-lg();
+}
+.btn-sm {
+  @include btn-sm();
+}
+.btn-xs {
+  @include btn-xs();
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: $grey500;
+
+  &:hover, &:focus, &:active {
+    background-color: $grey600;
+  }
+}
+
+/* Icon Button */
+.btn .icon {
+  display: inline-block;
+  // float: left;
+  padding: 0.1em 0.4em 0 0;
+}
+
+/* Button Colors */
+
+.btn-blue {
+  background-color: $blue-medium-wcag;
+}
+
+.btn-navy {
+  background-color: $navy;
+}
+
+.btn-blue-core {
+  background-color: $blue-core;
+  
+  &:hover, &:focus, &:active {
+    background-color: $navy;
+  }
+}
+
+.btn-aqua {
+  background-color: $aqua-wcag;
+
+  &:hover, &:focus, &:active {
+    background-color: $aqua-dark;
+  }
+}
+
+.btn-salmon {
+  background-color: $btn-salmon;
+
+  &:hover, &:focus, &:active {
+    background-color: $red-dark;
+  }
+}
+
+.btn-red {
+  background-color: $red;
+
+  &:hover, &:focus, &:active {
+    background-color: $red-dark;
+  }
+}
+
+.btn-orange {
+  background-color: $orange;
+
+  &:hover, &:focus, &:active {
+    background-color: $btn-orange-dark;
+  }
+}
+
+.btn-green {
+  background-color: $green;
+
+  &:hover, &:focus, &:active {
+    background-color: $green-dark;
+  }
+}
+
+.btn-yellow {
+  background-color: $btn-yellow;
+
+  &:hover, &:focus, &:active {
+    background-color: $btn-yellow-dark;
+  }
+}
+
+/* Multiple Buttons, Side by Side */
+.btn + .btn, .btn + .icon-link, .btn + a, .icon-link + a {
+  margin-left: 1em;
+}

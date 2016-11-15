@@ -1,0 +1,70 @@
+.fade-slide-right {
+  position: relative;
+}
+
+ol.carousel-indicators li.fade-slide-right:before {
+  content: none;
+}
+
+ol.carousel-indicators li.fade-slide-right:after {
+  display: none;
+}
+
+.left-bookend-control {
+  width: 20px;
+  float: left;
+  border-right: 1px solid rgba(255, 255, 255, .5);
+  margin-left: 10px;
+  text-align: center;
+  height: 65px;
+
+ }
+
+.right-bookend-control {
+  width: 20px;
+  float: right;
+  border-left: 1px solid rgba(255, 255, 255, .5);
+  margin-right: 10px;
+  text-align: center;
+  height: 65px;
+}
+
+.fb-icon {
+  position:relative;
+  top: 23px;
+  cursor: pointer;
+}
+
+.controls-wrapper {
+  white-space: nowrap;
+  height: 85px;
+}
+
+.controls-row {
+  position: relative;
+  top: -5px;
+  height: 0px;
+}
+
+// @media (max-width: 785px) {
+//   .features-benefits .carousel-indicators {
+//     left: 20px;
+//   }
+//   .features-benefits .carousel-indicators li:last-child {
+//     padding-right: 10px;
+//   }
+// }
+
+// @media screen and (-webkit-min-device-pixel-ratio:0) and 
+// (min-resolution:.001dpcm) and (max-width:785px) {
+//   .features-benefits .carousel-indicators {
+//     left: 110px;
+//   }
+// }
+
+// @media only screen and (min-width: 800px) {
+
+//     .right-bookend-control, .left-bookend-control {
+//         display: none;
+//     }
+// }

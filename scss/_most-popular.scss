@@ -1,0 +1,66 @@
+
+
+/* Most Popular */
+
+.most-popular {
+	padding: 4.5em 0 3em;
+
+	.most-popular-wrapper {
+		display: flex;
+
+		&> div {
+			display: flex;
+			align-items: stretch;
+
+			&:nth-child(odd) .most-popular-product {
+				background-color: $grey100;
+			}
+		}
+
+		.most-popular-product {
+			border: 2px solid $grey100;
+			padding: 0 2em 2em 2em;
+			transition: $all-fast;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			&:hover {
+				border: 2px solid $green;
+			}
+
+			&> * {
+				width: 100%;
+			}
+
+			.img-link {
+				margin: -50px auto 1em;
+			}
+
+			a h3, a:hover h3, a:focus h3, a:active h3 {
+				border: none;
+				color: $grey600;
+				margin: 1.1em 0 0;
+			}
+
+			.btn {
+				display: table;
+				margin: 0 auto;
+				align-self: flex-end;
+				width: auto;
+			}
+
+			.most-popular-marker {
+				margin: 0.5em 0;
+				position: relative;
+
+				span {
+					display: block;
+					margin-left: -1.4em;
+				    padding: 0.6em 0;
+				    width: 127%;
+				}
+			}
+		}
+	}
+}

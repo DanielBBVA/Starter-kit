@@ -1,0 +1,560 @@
+
+
+/* Structure */
+// I'm defining a base font-size of 62.5% to have the convenience of sizing rems in a way that is similar to using px.
+// http://snook.ca/archives/html_and_css/font-size-with-rem
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  // color: $grey500;
+  color: $grey600;
+  font-family: $sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,blockquote,ul,ol,.kicker,.header,.normal {
+  font-family: $sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+  color: $blue-medium-wcag;
+  font-family: $sans-serif-medium;
+  padding-bottom: 1.5px;
+  transition: $all-fast;
+  -webkit-backface-visibility: hidden;
+
+ &:hover, &:active, &:focus {
+    border-bottom: 1px solid $grey400;
+    color: darken( $blue-medium-wcag, 15% );
+    outline: none;
+    text-decoration: none;
+  }
+  
+  // If the link contains an img, remove the border decoration on hover
+  &.img-link, &.img-link:hover, &.img-link:active, &.img-link:focus, &.img-link:hover img, &.img-link:active img, &.img-link:focus img,
+  
+  // If the link is an Icon Link, remove the border decoration on hover
+  &.icon-link, &.icon-link:hover, &.icon-link:active, &.icon-link:focus {
+    border: none;
+    outline: none;
+    padding-bottom: 0;
+
+    .icon {
+      font-size: 0.95em;
+      padding-right: 7px;
+    }
+  }
+}
+
+
+// Color changes against dark backgrounds
+.dark-bg *, 
+.bg-navy *, 
+.bg-blue-core *, 
+.bg-blue-medium *, 
+.bg-aqua *, 
+.bg-aqua-dark *, 
+.bg-red *, 
+.bg-orange *, 
+.bg-green *, 
+.bg-purple *{
+  color: #fff;
+}
+
+.dark-bg a, a.dark-bg, .bg-navy a, .bg-grey600 a {
+  color: $blue-light;
+
+  &:hover, &:active, &:focus {
+    border-bottom: 1px solid $white;
+    color: $white;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &.icon-link, &.icon-link:hover, &.icon-link:active, &.icon-link:focus {
+    border: none;
+    outline: none;
+    padding-bottom: 0;
+  }
+}
+
+// Link color change against light grey background to pass WCAG AA 2.0 Accessibility Standards
+.bg-grey100 a, .bg-grey100 a.icon-link .icon {
+  color: $blue-medium-wcag;
+
+  &:hover, &:active, &:focus {
+    border-bottom: 1px solid $grey400;
+    color: darken( $blue-medium-wcag, 15% );
+    outline: none;
+    text-decoration: none;
+    transition: $color-fast;
+
+    .icon {
+      color: $navy;
+      transition: $color-fast;
+    }
+  }
+
+  &.icon-link, &.icon-link:hover, &.icon-link:active, &.icon-link:focus {
+    border: none;
+    outline: none;
+    padding-bottom: 0;
+  }
+}
+
+p {
+  font-family: $sans-serif;
+  line-height: 1.5;
+  margin: 0 0 1.5em;
+  color: $grey600;
+}
+
+hr {
+  border-color: $grey100;
+  border-width: 2px;
+  margin: 2em auto;
+  width: 100%;
+  // width: 60%;
+}
+.bg-grey100 hr, .prefooter hr {
+  border-color: $grey200;
+}
+
+// Lists 
+ul, ol {
+  font-family: $sans-serif;
+  margin:0 0 1.25em 0;
+  padding-left:1em;
+  li {
+    line-height: 1.4;
+    padding-bottom: 1em;
+    padding-left: 0.75em;
+  }
+
+  ul, ol {
+    margin-top: 1.25em;
+    margin-bottom: 0;
+
+    li:last-child {
+      padding-bottom: 0.5em;
+    }
+  }
+}
+
+// Ordered Lists 
+ol {
+  counter-reset: li; /* Initiate a counter */
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    //list-style: none;
+    margin: 0 0 0 1em;
+    position: relative;
+
+    /*&:before {
+      content:counter(li); // Use the counter as content 
+      counter-increment:li; // Increment the counter by 1 
+      // Position and style the number 
+      position:absolute;
+      top:-2px;
+      left:-3em;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      width:2.5em;
+      // Some space between the number and the content in browsers that support
+      //   generated content but not positioning it (Camino 2 is one example) 
+      margin-right:8px;
+      padding:4px;
+      font-size: 1.6rem;
+      text-align: center;
+      color: $grey500;
+    }
+      &:after {
+      color: $grey100;
+      content: $bbva-secondary-bullet;
+      display: block;
+      font-family: 'coronita';
+      font-size: 2.2em;
+      left: -1.3em;
+      top: -0.4em;
+      position: absolute;
+      z-index: -1;
+
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }*/
+  }
+}
+
+// Unordered Lists
+ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding-left: 1.5em;
+    position: relative;
+  }
+}
+
+// Alternative ul list styles up to 5 levels deep
+ul li, ul li li li, ul li li li li li {
+  &:before {
+    color: $grey300;
+    //content: $ico-cm_bullet;
+    display: block;
+    font-family: 'coronita';
+    font-size: 1em;
+    line-height: 1em;
+    margin-left: -1.5em;
+    position: absolute;
+  }
+}
+
+ul li li, ul li li li li {
+  &:before {
+   // content: $ico-cm_bullet;
+    font-size: 0.5em;
+    margin-left: -2.8em;
+    margin-top: 0.5em;
+  }
+}
+
+strong, .strong, b, .bold { 
+  font-family: $sans-serif-bold;
+  font-weight: 500;
+}
+
+/* Icon List */
+/* Unordered list with icons (instead of bullets) */
+ul.icon-list {
+  li {
+    display: table;
+    padding-left: 0;
+
+    &:before{
+      content: "";
+      display: none;
+      margin: 0;
+    }
+
+    .icon {
+      display: table-cell;
+      padding-right: 0.75em;
+      padding-top: 3px;
+      vertical-align: top;
+    }
+  }
+}
+
+blockquote {
+  border-bottom: 1px solid $grey200;
+  border-left: none;
+  border-top: 1px solid $grey200;
+  color: $blue-core;
+  margin: 4em 20%;
+  padding: 3em;
+
+  &.blockquote-aside {
+    display: block;
+    float: right;
+    margin: 3em 1em;
+    padding: 3em 1.75em;
+    position: relative;
+    width: 32%;
+  }
+
+  p {
+    font-family: $serif;
+    font-size: 1.3125em;
+
+    &.attribution {
+      color: $grey600;
+      font-family: $sans-serif-bold;
+      font-size: 1em;
+      margin-top: -1em;
+    }
+  }
+}
+
+/*  Testimonials
+    - a subset of blockquotes for testimonials 
+*/
+.testimonial{
+    background:$grey100;
+    border: none;
+    color: $grey600;
+    margin: 8rem 0 6rem 0;
+    position: relative;
+    padding:6rem 15%;
+    display: flex;
+    flex-direction: column;
+        p{
+            font-size: 3.6rem;
+            font-family: $serif-italic;
+            line-height: 1.4;
+            &.attribution {     
+                font-family: $sans-serif;
+                font-size: 2.2rem;
+                margin-top: -1em;
+                text-align: left;
+                align-self: flex-start;
+                max-width: 100%;
+            }
+        }
+    &:before{
+        $ico-cm_quotemark: "\e920";
+        font-family: 'bbva-cm-icons';
+        font-size:7.2rem;
+        position: absolute;
+        top: -4.5rem;
+        color:$blue-medium-wcag;
+    }
+}
+
+
+
+/* Typography */
+
+.hero-h1, .hero h1, h1.hero, h1 .hero, .hero-h1 a, .hero h1 a, h1.hero a, .hero h1 a {
+  font-family: $sans-serif-bold;
+  font-size: 6.5rem;
+  letter-spacing: -0.6px;
+  line-height: 1.1;
+  margin: 0 0 0.3em; 
+}
+
+h1, .h1, h1 a, .h1 a {
+  font-family: $sans-serif-bold;
+  font-size: 4.2rem;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+  margin: 0 0 0.3em; 
+}
+
+h1.thin, h1 .thin, .h1.thin, h1.thin a, .h1.thin a, h1 .thin a {
+  font-family: $sans-serif-light;
+}
+
+
+h2, .h2, h2 a, .h2 a {
+  font-family: $sans-serif-medium;
+  font-size: 3.6rem;
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+  margin:0 0 0.45em;
+}
+
+h2.thin, h2 .thin, .h2.thin, h2.thin a, .h2.thin a {
+  font-family: $sans-serif-light;
+  letter-spacing: -1.6px;
+}
+
+
+h2.serif, h2 .serif, .h2.serif, h2.serif a, .h2.serif a, h2 .serif a {
+  font-family: $serif;
+  letter-spacing: -0.2px;
+}
+
+h3, .h3, h3 a, .h3 a {
+  color: $grey600;
+  font-family: $sans-serif-medium;
+  font-size: 3.0rem;
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+  margin:0 0 0.75em;
+}
+
+h3.thin, h3 .thin, .h3.thin, h3.thin a, .h3.thin a, h3 .thin a {
+  font-family: $sans-serif-light;
+  letter-spacing: -1px;
+}
+
+
+h3.serif, h3 .serif, .h3.serif, h3.serif a, .h3.serif a, h3 .serif a {
+  font-family: $serif;
+  letter-spacing: -1px;
+}
+
+h4, .h4, h4 a, .h4 a {
+  color: $grey600;
+  font-family: $sans-serif-medium;
+  font-size: 2.6rem;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+  margin:0 0 0.8em;
+}
+
+h4.thin, h4 .thin, .h4.thin, h4.thin a, .h4.thin a, h4 .thin a {
+  font-family: $sans-serif-light;
+}
+
+h4.serif, .h4.serif, h4.serif a, .h4.serif a {
+  font-family: $serif;
+}
+
+h5, .h5, h5 a, .h5 a {
+  color: $grey600;
+  font-family: $sans-serif-medium;
+  font-size: 2.2rem;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h5.thin, h5 .thin, .h5.thin, h5.thin a, .h5.thin a, h5 .thin a {
+  font-family: $sans-serif-light;
+}
+
+
+h6, .h6, h6 a, .h6 a {
+  color: $grey500;
+  font-family: $sans-serif-medium;
+  font-size: 1.3rem;
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h6.bullet, h6 .bullet, .h6.bullet, h6.bullet a, .h6.bullet a, h6 .bullet a {
+  color: $grey600;
+  font-family: $sans-serif-medium;
+  font-size: 1.3rem;
+  margin-bottom: 2.5em;
+  text-transform: uppercase;
+}
+
+h6.bullet:before, .h6.bullet:before {
+  //font-family: 'coronita';
+  font-size: 1.4rem;
+  //content: $ico-cm_bullet;
+  color: $blue-light;
+  margin-right: 1em;
+  margin-left: .5em;
+  display: inline-block;
+  
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);  
+}
+
+.remoteofficerindex .h5 a, .mortofficerresultpage .h5 a {
+    color: $blue-medium-wcag;
+    
+    &:hover, &:active, &:focus {
+        color: darken( $blue-medium-wcag, 15% );
+    }
+}
+
+
+.lead {
+  font-family: $sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+}
+.disclosure {
+  font-family: $sans-serif-regular;
+  font-size: 1.3rem;
+  color: $grey500;
+  line-height: 1.55;
+}
+
+// Bootstrap .btn-block bug fix
+.btn-block + .btn-block{ 
+  margin-top:0;
+}
+
+/* Full-Width */
+.container-fluid {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+//Online Sign In
+.sign-in-form .username-input{
+    display: flex; 
+}
+.sign-in-form input[type="text"]{
+    flex: 2 1 auto;
+}
+
+.sign-in-form input[type="text"] + .btn{
+    margin:0;
+}
+
+.sign-in-form .remember-me {
+  input[type="checkbox"] {
+      display:none;
+
+      &:checked + label .faux-box:before {
+        color: $grey600;
+		font-family: 'bbva-sn-icons';
+        content: $ico-sn_checkmark;
+        font-size: 1.3em;
+        line-height: 1.2;
+        padding: 0.2em;
+      }
+  }
+
+  label {
+    color: #666666;
+    cursor: pointer;
+    font-family: $sans-serif-medium;
+    font-weight: 500;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .faux-box{
+      background-color: $grey100;
+      border-radius: 2px;
+      box-shadow: $inset-shadow;
+      display: inline-block;
+      margin-right: 8px;
+      position: relative;
+      height: 26px;
+      width: 26px;
+    }
+  }
+}
+
+/* Hiding S&P Default Text - "Search is currently not available." */
+h3.cq-texthint-placeholder {
+  display: none;
+}
+
+/*  Profile Img 
+    - intended for use on remote/mortgage office pages and blog
+*/
+.profile-img{
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    
+    img{
+        object-fit: cover;
+        font-family: 'object-fit: cover;'; // IE Polyfill support
+        width: 100%;
+        height: 100%;
+    }
+} 

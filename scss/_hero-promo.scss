@@ -1,0 +1,23 @@
+
+
+/* Promo Hero - Default */
+//intended for heros with background image and color overlay
+
+.hero-promo{
+    background-size:cover; 
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba( $blue-medium, 0.8);
+    
+    &.hero-core{
+        box-shadow: inset 0 0 0 1000px rgba($blue-core, 0.8);
+    }
+    
+    &.hero-aqua{
+        box-shadow: inset 0 0 0 1000px rgba($aqua, 0.8);
+    }
+}
+
+.slant{
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}

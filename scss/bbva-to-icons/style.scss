@@ -1,0 +1,184 @@
+@import "variables";
+
+@font-face {
+  font-family: 'bbva-to-icons';
+  src:  url('#{$icomoon-font-path}/bbva-to-icons.eot');
+  src:  url('#{$icomoon-font-path}/bbva-to-icons.eot') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/bbva-to-icons.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/bbva-to-icons.woff') format('woff'),
+    url('#{$icomoon-font-path}/bbva-to-icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-to"], [class*=" ico-to"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-to-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-to_agenda {
+  &:before {
+    content: $ico-to_agenda;
+  }
+}
+.ico-to_calculator {
+  &:before {
+    content: $ico-to_calculator;
+  }
+}
+.ico-to_calendar {
+  &:before {
+    content: $ico-to_calendar;
+  }
+}
+.ico-to_configuration {
+  &:before {
+    content: $ico-to_configuration;
+  }
+}
+.ico-to_consult {
+  &:before {
+    content: $ico-to_consult;
+  }
+}
+.ico-to_copy {
+  &:before {
+    content: $ico-to_copy;
+  }
+}
+.ico-to_desktop {
+  &:before {
+    content: $ico-to_desktop;
+  }
+}
+.ico-to_document {
+  &:before {
+    content: $ico-to_document;
+  }
+}
+.ico-to_download {
+  &:before {
+    content: $ico-to_download;
+  }
+}
+.ico-to_edit {
+  &:before {
+    content: $ico-to_edit;
+  }
+}
+.ico-to_excel {
+  &:before {
+    content: $ico-to_excel;
+  }
+}
+.ico-to_filter {
+  &:before {
+    content: $ico-to_filter;
+  }
+}
+.ico-to_graphics {
+  &:before {
+    content: $ico-to_graphics;
+  }
+}
+.ico-to_historic {
+  &:before {
+    content: $ico-to_historic;
+  }
+}
+.ico-to_home {
+  &:before {
+    content: $ico-to_home;
+  }
+}
+.ico-to_idcard {
+  &:before {
+    content: $ico-to_idcard;
+  }
+}
+.ico-to_interactivity {
+  &:before {
+    content: $ico-to_interactivity;
+  }
+}
+.ico-to_listview {
+  &:before {
+    content: $ico-to_listview;
+  }
+}
+.ico-to_mobile_icon-26 {
+  &:before {
+    content: $ico-to_mobile_icon-26;
+  }
+}
+.ico-to_mobile_icon-28 {
+  &:before {
+    content: $ico-to_mobile_icon-28;
+  }
+}
+.ico-to_myprofile {
+  &:before {
+    content: $ico-to_myprofile;
+  }
+}
+.ico-to_pdf {
+  &:before {
+    content: $ico-to_pdf;
+  }
+}
+.ico-to_print {
+  &:before {
+    content: $ico-to_print;
+  }
+}
+.ico-to_safeforlater {
+  &:before {
+    content: $ico-to_safeforlater;
+  }
+}
+.ico-to_search {
+  &:before {
+    content: $ico-to_search;
+  }
+}
+.ico-to_settings {
+  &:before {
+    content: $ico-to_settings;
+  }
+}
+.ico-to_team {
+  &:before {
+    content: $ico-to_team;
+  }
+}
+.ico-to_titleview {
+  &:before {
+    content: $ico-to_titleview;
+  }
+}
+.ico-to_trash {
+  &:before {
+    content: $ico-to_trash;
+  }
+}
+.ico-to_upload {
+  &:before {
+    content: $ico-to_upload;
+  }
+}
+.ico-to_word {
+  &:before {
+    content: $ico-to_word;
+  }
+}
+

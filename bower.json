@@ -1,0 +1,19 @@
+{
+  "name": "Starter-kit",
+  "authors": [
+    "Anderson",
+    "Daniel <daniel.anderson2@bbva.com>"
+  ],
+  "description": "Starter kit for BBVA Polymer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0"
+  }
+}

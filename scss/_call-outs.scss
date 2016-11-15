@@ -1,0 +1,72 @@
+
+
+/* Call Outs */
+
+//Grey
+.call-out{
+    padding: 3rem;
+    background: $grey100;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.call-out .call-out-icon{
+    font-size:2.8rem;
+    color: $grey400;
+    top: 0.25rem;
+    position: relative;
+    padding-right: 1.8rem;
+}
+
+.call-out .media-body .call-out-icon{
+    font-size:2.8rem;
+    top: 0;
+    padding-right:0;
+}
+
+.call-out .media-body h5{
+    font-family: $sans-serif-regular;
+}
+
+//Red
+.call-out.danger .call-out-icon{
+    color:#f35e61;
+}
+
+.call-out.danger{
+    background: #fcdfdf;
+}
+
+//Green
+.call-out.success .call-out-icon{
+    color: #48ae64;
+}
+
+.call-out.success{
+    background: #daefe0;
+}
+
+//Blue
+.call-out.info .call-out-icon{
+    color: #5bbeff;
+}
+
+.call-out.info{
+    background: #DEF2FF;
+}
+
+//Yellow
+.call-out.warning .call-out-icon{
+    color: #d8be75;
+}
+
+.call-out.warning{
+    background: #f3ebd5; 
+}
+
+
+
+
+.call-out .media-body p:last-of-type{
+    margin-bottom: 0;
+}

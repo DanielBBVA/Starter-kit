@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'bbva-fop-icons';
+  src:  url('fonts/bbva-fop-icons.eot?f90rsf');
+  src:  url('fonts/bbva-fop-icons.eot?f90rsf#iefix') format('embedded-opentype'),
+    url('fonts/bbva-fop-icons.ttf?f90rsf') format('truetype'),
+    url('fonts/bbva-fop-icons.woff?f90rsf') format('woff'),
+    url('fonts/bbva-fop-icons.svg?f90rsf#bbva-fop-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-fop-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-fop_account:before {
+  content: "\e900";
+}
+.ico-fop_atm:before {
+  content: "\e901";
+}
+.ico-fop_balance:before {
+  content: "\e902";
+}
+.ico-fop_bill:before {
+  content: "\e903";
+}
+.ico-fop_blockcard:before {
+  content: "\e904";
+}
+.ico-fop_cash:before {
+  content: "\e905";
+}
+.ico-fop_chargecard:before {
+  content: "\e906";
+}
+.ico-fop_chargemovil:before {
+  content: "\e907";
+}
+.ico-fop_contract:before {
+  content: "\e908";
+}
+.ico-fop_copycard:before {
+  content: "\e909";
+}
+.ico-fop_creditcard:before {
+  content: "\e90a";
+}
+.ico-fop_deposit:before {
+  content: "\e90b";
+}
+.ico-fop_digitalcard:before {
+  content: "\e90c";
+}
+.ico-fop_dischargecard:before {
+  content: "\e90d";
+}
+.ico-fop_dollar:before {
+  content: "\e90e";
+}
+.ico-fop_euro:before {
+  content: "\e90f";
+}
+.ico-fop_expressaccount:before {
+  content: "\e910";
+}
+.ico-fop_insurance:before {
+  content: "\e911";
+}
+.ico-fop_international:before {
+  content: "\e912";
+}
+.ico-fop_investment:before {
+  content: "\e913";
+}
+.ico-fop_limits:before {
+  content: "\e914";
+}
+.ico-fop_loan:before {
+  content: "\e915";
+}
+.ico-fop_mortaje:before {
+  content: "\e916";
+}
+.ico-fop_productportfolio:before {
+  content: "\e917";
+}
+.ico-fop_return:before {
+  content: "\e918";
+}
+.ico-fop_seecvv:before {
+  content: "\e919";
+}
+.ico-fop_settings:before {
+  content: "\e91a";
+}
+.ico-fop_stock:before {
+  content: "\e91b";
+}
+.ico-fop_ticket:before {
+  content: "\e91c";
+}
+.ico-fop_transfer:before {
+  content: "\e91d";
+}
+.ico-fop_transferaccount:before {
+  content: "\e91e";
+}
+.ico-fop_transfercard:before {
+  content: "\e91f";
+}
+.ico-fop_wallet:before {
+  content: "\e920";
+}
+

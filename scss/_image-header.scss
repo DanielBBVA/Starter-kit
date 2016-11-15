@@ -1,0 +1,93 @@
+
+
+/* Image Header */
+
+.image-header {
+   background-position: center center;
+   background-repeat: none;
+   background-size: cover;
+   height: 450px;
+   margin-bottom: 5.5em; 
+   padding: 1em;
+   position: relative;
+   width: 100%;
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+   h1 {
+      color: $white;
+      text-align: center;
+   }
+    
+    .container{ 
+        width: 66.66666667%;
+    }
+
+   &.image-header-short {
+      height: 280px;
+   }
+}
+
+.image-header-overlay {
+   background-color: $overlay;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   flex: none;
+}
+
+/* Full-Width Video Image Header */
+
+.video-full-width {
+   display: table;
+
+   a {
+      width: 100%;
+      height: 100%;
+      display: table-cell;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      color: $white;
+      opacity: 0.8;
+      border-bottom: none;
+      padding: 0;
+
+      &:hover {
+         opacity: 1;
+         border-bottom: 0;
+      }
+
+      .bbva-coronita_video-play {
+         font-size: 7.5rem;
+      }
+   }
+}
+
+
+/*Product Header*/
+.image-header.product-header{
+    min-height: 450px;
+    margin-bottom: 15%;
+    
+    .card-img {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 100%;
+        bottom: 0;
+        margin-top: -10rem;
+        max-width:25vw;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+ 
+

@@ -1,0 +1,687 @@
+
+
+// -------------------------------------------------- //
+// -------------------------------------------------- //
+/* No bullets helper class */
+ul.no-bullets li {
+	padding-left: 0;
+	&:before {
+		content: '';
+	}
+}
+
+// -------------------------------------------------- //
+// Legacy - Individual Branch Pages
+// -------------------------------------------------- //
+
+/* Show / Hide Helper Classes */
+/* added by Andrew */
+.display-true{
+	display:block;
+}
+.display-false{
+	display:none;
+}
+.display-inline-true{
+	display:inline-block;
+}
+.display-inline-false{
+	display:none;
+}
+.display-table-true{
+	display:table;
+}
+.display-table-false{
+	display:none;
+}
+.visibility-true{
+	visibility:visible;
+}
+.visibility-false{
+	visibility:hidden;
+}
+// .label-no-drive-up{
+// 	font-size:0.90em;
+// 	color:$grey500;
+// 	padding-bottom:15px;  
+// }
+/* END added by Andrew */
+
+// ---------------------- //
+// Structural / Globals
+// ---------------------- //
+
+.container-content {
+  padding-bottom: 60px;
+  padding-top: 60px; }
+
+.branch-index .container-content {
+	padding-bottom: 30px;
+}
+
+.col-stretch {
+  padding: 0; }
+
+.branch-index h1 {
+	margin-bottom: 60px;
+}
+
+.branch-index hr {
+	margin: 1.5em auto;
+}
+
+.note {
+  color: #363636;
+  font-size: 11px;
+  font-style: italic; }
+
+.media-body {
+  padding-bottom: 10px; }
+
+.media-right,
+.media > .pull-right {
+  padding-left: 15px; }
+
+.media-left,
+.media > .pull-left {
+  padding-right: 15px; }
+
+.branch-index .panel {
+	background-color: transparent;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.panel-mobile-collapsible {
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 10px; }
+  .panel-mobile-collapsible.border-none .panel-heading h2 {
+    border-top: none !important; }
+  .panel-mobile-collapsible.promo .panel-body {
+    padding-bottom: 40px; }
+  .panel-mobile-collapsible .panel-heading {
+    padding: 15px 15px 10px;
+    padding: 0 15px 10px; }
+    .panel-mobile-collapsible .panel-heading h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 35px; }
+      .panel-mobile-collapsible .panel-heading h2 a {
+        display: block; }
+        // .panel-mobile-collapsible .panel-heading h2 a .glyphicon:before {
+        //   content: "\2212"; }
+        // .panel-mobile-collapsible .panel-heading h2 a svg {
+        //   height: 32px;
+        //   display: inline-block;
+        //   position: relative;
+        //   top: -3px;
+        //   right: -6px; }
+        //   .panel-mobile-collapsible .panel-heading h2 a svg.icon-collapse path {
+        //     stroke: #094fa4; }
+        //   .panel-mobile-collapsible .panel-heading h2 a svg.icon-collapse rect {
+        //     fill: #094fa4; }
+        //   .panel-mobile-collapsible .panel-heading h2 a svg.icon-expand {
+        //     display: none; }
+        //     .panel-mobile-collapsible .panel-heading h2 a svg.icon-expand path {
+        //       fill: #094fa4; }
+        //     .panel-mobile-collapsible .panel-heading h2 a svg.icon-expand circle {
+        //       stroke: #094fa4; }
+        // .panel-mobile-collapsible .panel-heading h2 a.collapsed .glyphicon:before {
+        //   content: "\2b"; }
+        // .panel-mobile-collapsible .panel-heading h2 a.collapsed svg.icon-collapse {
+        //   display: none; }
+        // .panel-mobile-collapsible .panel-heading h2 a.collapsed svg.icon-expand {
+        //   display: inherit; }
+  .panel-mobile-collapsible .panel-body {
+    padding: 10px 15px 0; }
+    .panel-mobile-collapsible .panel-body h5 {
+      margin-top: 0; }
+	
+	.panel.panel-mobile-collapsible .panel-heading h2.visible-xs a {
+		font-size: 1.6rem;
+
+		.bbva-coronita_plus-stag {
+			display: none;
+		}
+
+		&.collapsed {
+			.bbva-coronita_minus-stag {
+				display: none;
+			}
+
+			.bbva-coronita_plus-stag {
+				display: block;
+			}
+		}
+
+		&:hover, &:focus, &:active {
+			border-bottom: 1px solid transparent;
+		}
+	}
+
+// .panel-message .panel-heading {
+//   margin: 0 15px;
+//   padding: 0 0 10px; }
+//   .panel-message .panel-heading h2:first-child {
+//     padding: 35px 30px 0; }
+// .panel-message .panel-body {
+//   margin: 0 15px;
+//   padding: 10px 30px 35px;
+//   font-size: 16px;
+//   line-height: 1.5em; }
+// .panel-message img {
+//   margin: 0 0 35px 15px; }
+// .panel-message.blue .panel-heading, .panel-message.blue .panel-body {
+//   background: #f2f6fa; }
+
+// .row-collapsible > div:nth-child(odd) {
+//   border-right: 1px solid #e5e5e5; }
+//   .row-collapsible > div:nth-child(odd) .row.padded {
+//     padding-left: 45px; }
+// .row-collapsible > div:nth-child(even) {
+//   float: right; }
+
+// ---------------------- //
+// Alerts
+// ---------------------- //
+
+  /* display of the alert is toggled in the page using the POI object */
+  .branch-index .alert {
+  	border-radius: 0;
+  }
+
+// ---------------------- //
+// Map & Top Branch Info
+// ---------------------- //
+
+#map-canvas {
+	height: 610px;
+  	position: relative;
+  	width: 100%;
+  	margin-bottom: 20px;
+}
+
+.block-branch-info {
+	color: $white;
+  height: 610px;
+  position: absolute;
+  top: 0;
+  background: $blue-core;
+  padding: 40px;
+  overflow: hidden;
+  width: 350px; }
+
+  .block-branch-info .caps {
+  	font-family: $sans-serif-medium;
+  	font-size: 1.3rem;
+  	letter-spacing: 0.5px;
+  }
+
+  .block-branch-info h2, .block-branch-info .h2 {
+    margin-top: 0; }
+
+  .block-branch-info p {
+  	margin-bottom: 1em;
+  }
+
+  .block-branch-info a.btn {
+  	margin-top: 1.7em;
+
+  	&:hover {
+  		background-color: $navy;
+  	}
+   }
+
+  .block-branch-info img {
+    margin: 0 0 20px; }
+
+// ---------------------- //
+// Branch Hours
+// ---------------------- //
+
+#branch-hours .pull-right {
+    text-transform: capitalize;
+}
+
+.hours {
+	h5 {
+		font-size: 1.3rem;
+		margin-bottom: 1.3em;
+	}
+}
+
+.hour-range {
+    padding-left: 1.2rem;
+}
+
+/* Open/Closed Label */
+.label {
+	font-size: 1.1rem;
+	position: relative;
+	display: block;
+  font-weight: normal;
+  padding: 0.25em 0.3em 0.2em 2.3em;
+  margin-left: 6.5rem; }
+
+.label:before {
+	//CSS-generated right-angle triangle
+	content: '\0000a0';
+	width: 0;
+	height: 0;
+	text-indent: -9999px;
+	border-bottom: 16px solid $red;
+	border-left: 10px solid transparent;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: -10px;
+
+	// Edge-smoothing in Firefox
+	-moz-transform: scale(.9999);
+}
+
+  .label.label-default {
+  	border-radius: 0;
+    background: $red; }
+
+  .label.label-success {
+  	border-radius: 0;
+    background: $green; }
+
+  .label.label-success:before {
+  	border-bottom: 16px solid $green;
+  }
+
+ h5 > .label {
+ 	display: none;
+ }
+
+
+// ---------------------- //
+// Holidays
+// ---------------------- //
+ .holidays p {
+    margin-bottom: 15px;
+}
+
+.holidays table {
+	width: 100%;
+}
+
+.holidays table tr td {
+    padding: 1.7rem 4rem;
+}
+
+.holidays table > tbody > tr > td, .holidays table tr {
+	border: none;
+}
+
+.holidays table tr:nth-child(2n) td {
+	background-color: $blue-white-light;
+}
+
+.holidays table tr td:last-child {
+	font-family: $sans-serif-medium;
+}
+
+// ---------------------- //
+// News Feed
+// ---------------------- //
+.feed .feed-attribution {
+	margin: 4rem 0 4.5rem;
+	padding: 1.3rem;
+}
+
+.feed-item-date {
+	color: $grey500;
+    display: block;
+    font-family: $sans-serif-medium;
+    font-size: 1.3rem;
+    padding: 0.7em 0 1em;
+    position: relative;
+}
+
+// ---------------------- //
+// Facebook / Twitter Links
+// ---------------------- //
+// .social-link {
+//   display: block;
+//   color: #fff;
+//   padding: 20px 30px; }
+//   .social-link.fb {
+//     background: #094fa4; }
+//     .social-link.fb svg {
+//       left: -15px; }
+//   .social-link.twitter {
+//     background: #009ee5; }
+//     .social-link.twitter svg {
+//       left: -12px; }
+//   .social-link:hover, .social-link:focus, .social-link:active {
+//     text-decoration: none;
+//     color: #fff; }
+//   .social-link svg {
+//     display: block;
+//     height: 23px;
+//     position: relative;
+//     margin-bottom: 13px; }
+//     .social-link svg g {
+//       fill: #fff; }
+
+// -------------------------------------------------- //
+// Legacy - Branch Directory Pages (Index, State, City)
+// -------------------------------------------------- //
+
+.directory h1 {
+	padding-bottom: 35px;
+}
+
+.directory .error-msg {
+	font-family: $sans-serif-medium;
+	padding-top: 1.5em;
+
+	.bbva-coronita_alert {
+    	padding-right: 0.4em;
+	}
+}
+
+.directory .row-collapsible > div:nth-child(2n+1) {
+	border-right: none;
+}
+
+.directory .row-collapsible > div:nth-child(2n+1) .row.padded {
+	padding: 0 35px;
+}
+
+.directory .breadcrumb {
+	display: none;
+}
+
+.directory .metro-col, .directory .city-col {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.directory .city-col .address-block {
+	display: inline-block;
+
+	p:first-child {
+	    margin-bottom: 0.5em;
+	}
+}
+
+// -------------------------------------------------- //
+// Media Queries
+// -------------------------------------------------- //
+
+// ---------------------- //
+// max-width 991px
+// ---------------------- //
+@media (max-width: 991px) {
+	.container-content	{ padding-bottom: 40px; padding-top: 40px; }
+
+	.directory h1 {
+		padding-bottom: 20px;
+	}
+
+	.directory .metro-col, .directory .city-col {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+
+	.branch-index h1 {
+	    margin-bottom: 40px;
+	}
+}
+
+// ---------------------- //
+// min width: 768px
+// max-width 991px
+// ---------------------- //
+@media (min-width: 768px) and (max-width: 991px) {
+
+  // #map-canvas {
+  //   height: 280px; } 
+}
+
+// ---------------------- //
+// max-width 767px
+// ---------------------- //
+@media (max-width: 767px) {
+
+  .container-content {padding-bottom: 30px; padding-top: 30px;}
+
+  .panel-mobile-collapsible.border-persistent .panel-heading h2 {
+    border-top: 1px solid $grey200; }
+  .panel.panel-mobile-collapsible .panel-heading h2.border-persistent {
+    border-top: 1px solid $grey200; }
+
+  .branch-index .local-msg-container {
+  	background-color: transparent;
+  	padding-bottom: 0;
+  	padding-top: 0;
+  	margin-bottom: -30px;
+  }
+
+  .directory h1 {
+		padding-bottom: 10px;
+	}
+
+  .directory .row-collapsible > div:nth-child(2n+1) .row.padded {
+    padding: 0;
+  }
+
+  .directory .row-collapsible > div:nth-child(2n+1) .row.padded .col-xs-12 {
+  	padding-left: 0;
+  }
+
+  .branch-index h1 {
+	margin-bottom: 30px;
+  }
+
+  #map-canvas {
+    height: 185px;
+    margin-bottom: 40px; }
+
+  .block-branch-info {
+    background: transparent;
+    color: $grey600;
+    height: auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    *, .white {
+    	color: $grey600;
+    }
+
+    p {
+    	line-height: 1.65;
+    }
+
+  	a.btn:hover {
+  		background-color: $blue-core;
+  	}
+
+    a:not(.btn) {
+	  color: $blue-medium-wcag;
+
+	 &:hover {
+	    border-bottom: 1px solid transparent;
+	  }
+
+	  .icon {
+	  	color: $blue-medium-wcag;
+	  	display: inline !important;
+	  	font-size: 0.9em;
+	  }
+	}
+  }
+
+  .block-branch-info .phone-info .icon {
+    font-size: 3.8em;
+    margin: 10px 0 0;
+  }
+  
+  .phone-info .icon {
+    font-size: 1.1em;
+  }
+
+  .display-false {
+  	display: none !important;
+  }
+
+  .holidays table tr td {
+    padding: 1.7rem;
+  }
+
+  // .promo.localmsg-false { border-top: none;}
+
+  // .mobile-emphasize {
+  //   font-size: 1.29em !important;
+  //   /*max-width: 565px;*/
+  //   max-width: 100%; }
+
+  .row-collapsible > div:nth-child(odd) {
+    border-right: none; }
+    .row-collapsible > div:nth-child(odd) .row.padded {
+      padding-left: 0; }
+  .row-collapsible .col-stretch .row {
+    margin: 0; }
+
+  .panel.panel-mobile-collapsible .panel-heading {
+  	margin-bottom: 1em;
+    padding: 0; }
+    .panel.panel-mobile-collapsible .panel-heading h2 {
+      border-top: 1px solid $grey200;
+      padding-top: 0;
+      padding-bottom: 0; }
+      .panel.panel-mobile-collapsible .panel-heading h2 a {
+      	padding-top: 35px;
+      	padding-bottom: 10px; 
+		
+		&:not(.collapsed), &:not(.collapsed):hover, &:not(.collapsed):focus, &:not(.collapsed):active {
+    		border-bottom: 1px solid $grey200; 
+    		padding-bottom: 30px;
+    	}
+
+    	span {
+    		padding-right: 1em;
+    	}
+      }
+
+  .panel.panel-mobile-collapsible .panel-body {
+    padding: 10px 0 0; }
+
+  .branch-index .panel.hours {
+	margin-bottom: -30px;
+  }
+
+  .row-collapsible .col-stretch {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #localMsgDesktop {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  // .panel.panel-message .panel-heading {
+  //   margin: 0; }
+  // .panel.panel-message .panel-body {
+  //   margin: 0;
+  //   font-size: 14px;
+  //   line-height: 1.43em; }
+  // .panel.panel-message img {
+  //   margin: 0 0 10px 15px; }
+
+  // .block-branch-info {
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  //   padding: 30px 15px;
+  //   box-shadow: none; }
+  //   .block-branch-info h2, .block-branch-info hr {
+  //     display: none; }
+  //   .block-branch-info .icon-labeled {
+  //     font-size: 18px;
+  //     line-height: 1.44em;
+  //     float: left; }
+  //     .block-branch-info .icon-labeled .glyphicon {
+  //       top: 5px; }
+  //     .block-branch-info .icon-labeled.phone-info {
+  //       width: 120px;
+  //       text-align: center;
+  //       color: #094fa4;
+  //       background: #e4f5fc;
+  //       padding: 8px 16px 10px;
+  //       font-size: 12px;
+  //       line-height: 1.27em;
+  //       float: right;
+  //       border-radius: 5px; }
+  //       .block-branch-info .icon-labeled.phone-info a {
+  //         display: block; }
+  //       .block-branch-info .icon-labeled.phone-info .glyphicon, .block-branch-info .icon-labeled.phone-info svg {
+  //         font-size: 45px;
+  //         position: relative;
+  //         display: block; }
+  //       .block-branch-info .icon-labeled.phone-info .container-icon {
+  //         width: 61px;
+  //         height: 61px;
+  //         margin: 0 auto;
+  //         overflow: hidden;
+  //         display: inline-block; }
+  //         .block-branch-info .icon-labeled.phone-info .container-icon svg {
+  //           width: inherit;
+  //           height: inherit;
+  //           top: inherit;
+  //           left: inherit;
+  //           display: inline; }
+  //       .block-branch-info .icon-labeled.phone-info .number {
+  //         color: #094fa4; }
+  //         .block-branch-info .icon-labeled.phone-info .number:before {
+  //           content: 'Call';
+  //           border-top: 1px solid #a5dbf4;
+  //           display: block;
+  //           padding: 8px 0 0;
+  //           margin: 3px 0 0; }
+
+  // .social-link {
+  //   padding: 20px 15px; }
+}
+
+// ---------------------- //
+// max-width 480px
+// ---------------------- //
+
+@media (max-width: 480px) {
+	
+	.directory .metro-col, .directory .city-col {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+
+	.feed h5 	{ margin-bottom: 5px; }
+
+	.branch-index table {
+		border-top: none;
+		border-bottom: none;
+
+		td:first-child {
+			font-family: $sans-serif-bold;
+		}
+
+		td {
+			font-size: 0.9em;
+			padding: 1.4rem;
+		}
+	}
+}

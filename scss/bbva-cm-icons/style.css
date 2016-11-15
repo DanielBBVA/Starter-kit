@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'bbva-cm-icons';
+  src:  url('fonts/bbva-cm-icons.eot?bqmxfj');
+  src:  url('fonts/bbva-cm-icons.eot?bqmxfj#iefix') format('embedded-opentype'),
+    url('fonts/bbva-cm-icons.ttf?bqmxfj') format('truetype'),
+    url('fonts/bbva-cm-icons.woff?bqmxfj') format('woff'),
+    url('fonts/bbva-cm-icons.svg?bqmxfj#bbva-cm-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-cm-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-cm_alarm:before {
+  content: "\e900";
+}
+.ico-cm_alert:before {
+  content: "\e901";
+}
+.ico-cm_appstore:before {
+  content: "\e902";
+}
+.ico-cm_audio:before {
+  content: "\e903";
+}
+.ico-cm_BBVAcontigo:before {
+  content: "\e904";
+}
+.ico-cm_bluetooth:before {
+  content: "\e905";
+}
+.ico-cm_camera:before {
+  content: "\e906";
+}
+.ico-cm_clock:before {
+  content: "\e907";
+}
+.ico-cm_communication:before {
+  content: "\e908";
+}
+.ico-cm_email:before {
+  content: "\e909";
+}
+.ico-cm_facebook:before {
+  content: "\e90a";
+}
+.ico-cm_facebook2:before {
+  content: "\e90b";
+}
+.ico-cm_favorite:before {
+  content: "\e90c";
+}
+.ico-cm_googleplus:before {
+  content: "\e90d";
+}
+.ico-cm_googleplus2:before {
+  content: "\e90e";
+}
+.ico-cm_gooplay2:before {
+  content: "\e90f";
+}
+.ico-cm_hashtag:before {
+  content: "\e910";
+}
+.ico-cm_help:before {
+  content: "\e911";
+}
+.ico-cm_info:before {
+  content: "\e912";
+}
+.ico-cm_instagram:before {
+  content: "\e913";
+}
+.ico-cm_instagram2:before {
+  content: "\e914";
+}
+.ico-cm_language:before {
+  content: "\e915";
+}
+.ico-cm_linkedin:before {
+  content: "\e916";
+}
+.ico-cm_linkedin2:before {
+  content: "\e917";
+}
+.ico-cm_microphone:before {
+  content: "\e918";
+}
+.ico-cm_mobiledisconnected:before {
+  content: "\e919";
+}
+.ico-cm_nfcconnect:before {
+  content: "\e91a";
+}
+.ico-cm_nfcdisconnect:before {
+  content: "\e91b";
+}
+.ico-cm_pause:before {
+  content: "\e91c";
+}
+.ico-cm_pinterest:before {
+  content: "\e91d";
+}
+.ico-cm_pinterest2:before {
+  content: "\e91e";
+}
+.ico-cm_play:before {
+  content: "\e91f";
+}
+.ico-cm_quotemark:before {
+  content: "\e920";
+}
+.ico-cm_reademail:before {
+  content: "\e921";
+}
+.ico-cm_reply:before {
+  content: "\e922";
+}
+.ico-cm_retweet:before {
+  content: "\e923";
+}
+.ico-cm_send:before {
+  content: "\e924";
+}
+.ico-cm_share:before {
+  content: "\e925";
+}
+.ico-cm_slideshare:before {
+  content: "\e926";
+}
+.ico-cm_slideshare2:before {
+  content: "\e927";
+}
+.ico-cm_support:before {
+  content: "\e928";
+}
+.ico-cm_telephone:before {
+  content: "\e929";
+}
+.ico-cm_twitter:before {
+  content: "\e92a";
+}
+.ico-cm_twitter2:before {
+  content: "\e92b";
+}
+.ico-cm_videochat:before {
+  content: "\e92c";
+}
+.ico-cm_videoplayline:before {
+  content: "\e92d";
+}
+.ico-cm_youtube:before {
+  content: "\e92e";
+}
+.ico-cm_youtube2:before {
+  content: "\e92f";
+}
+

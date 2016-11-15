@@ -1,0 +1,41 @@
+
+
+/* CTA Aside */
+
+.cta-aside {
+  margin-bottom: 2.5em;
+  padding: 3.125em 3.125em 2em;
+
+  h4 {
+    margin-bottom: 0.25em;
+  }
+
+  .btn {
+    margin-bottom: 1.5em;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  p {
+    color: $grey500;
+    font-family: $sans-serif; 
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+
+  a:not(.btn, .modal-close) {
+    display: inline-block;
+    margin: 0 auto 1rem;
+  }
+    
+    div > a:not(.btn),
+    .cta-aside .btn + .icon-link{
+        display: table;
+        margin: 0 auto;
+        margin-top: .5rem;
+    }
+}
+
+.ctaaside:only-of-type .cta-aside{
+    margin-bottom:0;
+}

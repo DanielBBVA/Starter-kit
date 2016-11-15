@@ -1,0 +1,44 @@
+
+
+/* Secondary Content AEM Spacing Fix */
+.secondarycontent {
+    padding-top: 1em;
+}
+
+/* Secondary Content Block */
+
+.secondary-content {
+  padding-bottom: 2.5em;
+  position: relative;
+  margin-right: 4%;
+
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .icon {
+    color: $grey400;
+    display: block;
+    padding-bottom: 0.5em;
+  }
+
+  &> a {
+    display: table;
+    margin: 1em 0;
+  }
+}
+
+/* 3 Column Layout */
+
+.secondary-content-3-col {
+  justify-content: space-evenly;
+
+  .secondary-content {
+    width: 30%;
+    margin-right: 4%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

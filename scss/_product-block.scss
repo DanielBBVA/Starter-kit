@@ -1,0 +1,46 @@
+
+
+/* Product Block */
+
+.product-block {
+  display: flex;
+  padding: 2.75em 0;
+  position: relative;
+
+  h2 {
+      margin-bottom: 0.45em;
+  }
+
+  .media-left, .media-right {
+    align-self: center;
+    max-width: 33%;
+    position: relative;
+
+    img {
+      display: block;
+      max-height: 300px;
+      position: relative;
+    }
+  }
+
+  .media-left {
+    padding-right: 4vw;
+
+    img {
+      float: left;
+    }
+  }
+
+  .media-right {
+    order: 2;
+    padding-left: 4vw;
+
+    img {
+      float: right;
+    }
+  }
+
+  .media-body {
+    width: 67%;
+  }
+}

@@ -1,0 +1,182 @@
+
+
+/* Features & Benefits */
+
+.features-benefits {
+  background-color: $blue-medium-wcag;
+  color: $white;
+  padding: 0;
+
+  /* Andy Changes */
+  .xscroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+  }
+  /* end Andy */
+
+  .carousel {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: $white;
+    padding: 1.45em 0 0.3em;
+  }
+
+  .carousel-arrows {
+    align-items: center;
+    display: none;
+    height: 90%;
+    margin-bottom: 0;
+    width: 93%;
+    z-index: 2;
+
+    li {
+      padding: 0;
+      width: 50%;
+
+      &:before {
+        content: '';
+      }
+
+      a {
+        background: transparent;
+        color: $blue-white;
+        display: block;
+        font-family: $sans-serif-bold;
+        font-size: 1.6rem;
+        opacity: 1;
+        position: relative;
+        text-shadow: none;
+        white-space: nowrap;
+        width: 100%;
+
+        &:hover {
+          color: $white;
+        }
+
+        .icon:before {
+          display: inline-block;
+          position: relative;
+          top: 2px;
+        }
+      }
+
+      &.carousel-previous {
+        padding: 0 22% 0 10%;
+        
+        a {
+          text-align: left;
+        }
+      }
+
+      &.carousel-next {
+        padding: 0 10% 0 22%;
+        
+        a {
+          text-align: right;
+
+          .icon {
+            padding: 0 0 0 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-indicators {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    left: auto;
+    margin-left: 0;
+    margin-bottom: 2em;
+    position: relative;
+    bottom: auto;
+    z-index: 1;
+
+    li {
+      border: none;
+      color: $blue-white;
+      font-family: $sans-serif-bold;
+      display: table;
+      height: auto;
+      width: auto;
+      text-indent: 0;
+      margin: 0;
+      padding: 0 6% 0 0;
+      transition: $color-fast;
+
+      &:before, &:after {
+        content: '';
+      }
+
+      &:hover {
+        color: $white;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &.active {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        height: auto;
+        width: auto;
+      }
+
+      span {
+        display: block;
+        position: relative;
+        text-align: center;
+      }
+
+      .icon {
+        padding-bottom: 0.5em;
+      }
+    }
+  }
+}
+
+/* Individual "Slides" */
+.features-benefits-slide {
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  min-height: 700px;
+  display: flex;
+  align-items: stretch;
+
+  .container {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+
+    &> div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+
+      &> div {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    h3 {
+      font-family: $sans-serif-bold;
+      color: $white;
+      width: 100%;
+    }
+
+    .btn {
+      margin-top: 2em;
+    }
+  }
+}

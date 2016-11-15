@@ -1,0 +1,46 @@
+
+
+/* Inline Nav */
+
+.inline-nav-item {
+  border-bottom: none;
+  display: table;
+  margin: 0 auto;
+  margin: 6em auto;
+  position: relative;
+  text-align: center;
+
+  img {
+    display: block;
+    height: auto;
+    margin: 0 auto 1.825em;
+    max-width: 50%;
+    min-width: 150px;
+    position: relative;
+  }
+
+  h2 {
+    color: $grey600;
+    margin-bottom: 0.65em;
+    transition: $color-fast;
+  }
+
+  p {
+    font-family: $sans-serif-medium;
+    transition: $color-fast;
+
+    &:not(.faux-link) {
+      color: $grey600;
+      font-family: $sans-serif;
+    }
+  }
+
+  &:hover, &:focus, &:active {
+    border-bottom: none;
+    color: $blue-medium-wcag;
+    
+    h2, p {
+      color: $blue-medium-wcag;
+    }
+  }
+}

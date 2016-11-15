@@ -1,0 +1,194 @@
+@import "variables";
+
+@font-face {
+  font-family: 'bbva-fop-icons';
+  src:  url('#{$icomoon-font-path}/bbva-fop-icons.eot?f90rsf');
+  src:  url('#{$icomoon-font-path}/bbva-fop-icons.eot?f90rsf#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/bbva-fop-icons.ttf?f90rsf') format('truetype'),
+    url('#{$icomoon-font-path}/bbva-fop-icons.woff?f90rsf') format('woff'),
+    url('#{$icomoon-font-path}/bbva-fop-icons.svg?f90rsf#bbva-fop-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-fop"], [class*=" ico-fop"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bbva-fop-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-fop_account {
+  &:before {
+    content: $ico-fop_account;
+  }
+}
+.ico-fop_atm {
+  &:before {
+    content: $ico-fop_atm;
+  }
+}
+.ico-fop_balance {
+  &:before {
+    content: $ico-fop_balance;
+  }
+}
+.ico-fop_bill {
+  &:before {
+    content: $ico-fop_bill;
+  }
+}
+.ico-fop_blockcard {
+  &:before {
+    content: $ico-fop_blockcard;
+  }
+}
+.ico-fop_cash {
+  &:before {
+    content: $ico-fop_cash;
+  }
+}
+.ico-fop_chargecard {
+  &:before {
+    content: $ico-fop_chargecard;
+  }
+}
+.ico-fop_chargemovil {
+  &:before {
+    content: $ico-fop_chargemovil;
+  }
+}
+.ico-fop_contract {
+  &:before {
+    content: $ico-fop_contract;
+  }
+}
+.ico-fop_copycard {
+  &:before {
+    content: $ico-fop_copycard;
+  }
+}
+.ico-fop_creditcard {
+  &:before {
+    content: $ico-fop_creditcard;
+  }
+}
+.ico-fop_deposit {
+  &:before {
+    content: $ico-fop_deposit;
+  }
+}
+.ico-fop_digitalcard {
+  &:before {
+    content: $ico-fop_digitalcard;
+  }
+}
+.ico-fop_dischargecard {
+  &:before {
+    content: $ico-fop_dischargecard;
+  }
+}
+.ico-fop_dollar {
+  &:before {
+    content: $ico-fop_dollar;
+  }
+}
+.ico-fop_euro {
+  &:before {
+    content: $ico-fop_euro;
+  }
+}
+.ico-fop_expressaccount {
+  &:before {
+    content: $ico-fop_expressaccount;
+  }
+}
+.ico-fop_insurance {
+  &:before {
+    content: $ico-fop_insurance;
+  }
+}
+.ico-fop_international {
+  &:before {
+    content: $ico-fop_international;
+  }
+}
+.ico-fop_investment {
+  &:before {
+    content: $ico-fop_investment;
+  }
+}
+.ico-fop_limits {
+  &:before {
+    content: $ico-fop_limits;
+  }
+}
+.ico-fop_loan {
+  &:before {
+    content: $ico-fop_loan;
+  }
+}
+.ico-fop_mortaje {
+  &:before {
+    content: $ico-fop_mortaje;
+  }
+}
+.ico-fop_productportfolio {
+  &:before {
+    content: $ico-fop_productportfolio;
+  }
+}
+.ico-fop_return {
+  &:before {
+    content: $ico-fop_return;
+  }
+}
+.ico-fop_seecvv {
+  &:before {
+    content: $ico-fop_seecvv;
+  }
+}
+.ico-fop_settings {
+  &:before {
+    content: $ico-fop_settings;
+  }
+}
+.ico-fop_stock {
+  &:before {
+    content: $ico-fop_stock;
+  }
+}
+.ico-fop_ticket {
+  &:before {
+    content: $ico-fop_ticket;
+  }
+}
+.ico-fop_transfer {
+  &:before {
+    content: $ico-fop_transfer;
+  }
+}
+.ico-fop_transferaccount {
+  &:before {
+    content: $ico-fop_transferaccount;
+  }
+}
+.ico-fop_transfercard {
+  &:before {
+    content: $ico-fop_transfercard;
+  }
+}
+.ico-fop_wallet {
+  &:before {
+    content: $ico-fop_wallet;
+  }
+}
+

@@ -1,0 +1,79 @@
+.svg-nav-container {
+    display: -webkit-box;
+    margin: 10px auto;
+    width: 215px;
+}
+
+.svg-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 5px 5px;
+}
+
+#cards {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+
+#cards:hover {
+  cursor: pointer;
+}
+
+#planes {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+
+#planes:hover {
+  cursor: pointer;
+}
+
+#branches {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+#branches:hover {
+  cursor: pointer;
+}
+
+#security {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+#security:hover {
+  cursor: pointer;
+}
+
+#alerts {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+#alerts:hover {
+  cursor: pointer;
+}
+
+#software {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+#software:hover {
+  cursor: pointer;
+}
+
+.desc {
+  margin-top: 20px;
+}

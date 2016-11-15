@@ -1,0 +1,71 @@
+
+
+/* Hero - Default */
+// Background image is photographic or "busy" in terms of visual content
+
+.hero-main {
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  min-height: 700px;
+  min-height: 60vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding: 0;
+
+  .hero-text {
+    @include alpha-background-color(rgba($grey100, 0.8), white);
+
+    margin: 10.65vh 0;
+    padding: 1.75em 1.75em 0;
+    width: 50%;
+
+    h1 {
+      //font-size: 3em;
+      line-height: 1;
+    }
+
+    p {
+      color: $grey600;
+      font-size: 1.6rem;
+      margin: 0.7em 0 1.7em;
+
+      &.hero-cta {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+    }
+
+    .btn {
+      display: block;
+      margin-bottom: 1.75em;
+      margin-right: 1.75em;
+      margin-top: 0;
+      white-space: nowrap;
+    }
+
+    .icon-link, a:not(.btn) {
+      border-bottom: none;
+      display: table;
+      font-size: 1.6rem;
+      margin-left: 0;
+      margin-bottom: 1.75em;
+      transition: $color-fast;
+
+      &:hover {
+        color: $blue-core;
+      }
+
+      .icon {
+        display: table-cell;
+        font-size: 1.5em;
+        padding-right: 0.35em;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+
